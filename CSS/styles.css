@@ -13,9 +13,112 @@ img {
   height: auto;
 }
 
+:root {
+  --doncella-turquoise-color: #5FCFD5;
+  --doncella-grey-color: #FAFAFA;
+  --doncella-navy-color: #003D5C; /* Deep navy blue */
+  --doncella-coral-color: #FF6B6B; /* Soft coral */
+  --doncella-light-blue-color: #AED9E0;
+  --doncella-white-color: #FFFFFF; 
+}
+
+/* ====================TESTING ==================== */
 
 /* ====================CARD==================== */
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* height: 100vh; */
+}
 
+.card__container {
+  padding-block: 5rem;
+}
+
+.card__content {
+  margin-inline: 1.75rem;
+  /* border-radius: 1.25rem; */
+  overflow: hidden;
+  background-color: var(--doncella-light-blue-color)
+}
+
+.card__article {
+  width: 300px;
+  /* border-radius: 1.25rem; */
+  overflow: hidden;
+}
+
+.card__image {
+  position: relative;
+  background-color: var(--doncella-turquoise-color);
+  /* padding-top: 1.5rem; */
+  margin-bottom: -.75;
+  overflow: hidden; /* This will ensure the image stays within the bounds of the container */
+
+}
+
+.card__data {
+  background-color: var(--doncella-grey-color);
+  padding: 1.5rem 2rem;
+  /* border-radius: 1rem; */
+  text-align: center;
+  position: relative;
+  z-index: 10;
+}
+.card__img {
+  /* width: 180px; */
+  width: 100%;
+  height: auto;
+  /* margin: 0 auto; */
+  /* Remove margin if you want the image to stretch to the edges */
+  /* margin: 0 auto; */
+  display: block;
+  position: relative;
+  z-index: 5;
+}
+
+.card__shadow {
+  width: 200px;
+  height: 200px;
+  background-color: var(--doncella-light-blue-color);
+  /* border-radius: 50%; */
+  position: absolute;
+  top: 3.75rem;
+  left: 0;
+  right: 0;
+  margin-inline: auto;
+  filter: blur(45px);
+}
+
+.card__name {
+  font-size: 1.5rem;
+  font-weight: 300;
+  color: var(--doncella-turquoise-color);
+  margin-bottom: .35rem;
+}
+
+.card__subtitle {
+  font-weight: 500;
+  font-style: var(--doncella-navy-color);
+  font-size: 1rem;
+  margin-bottom: .65rem;
+}
+
+.card__description {
+  font-weight: 400;
+  margin-bottom: 1.75rem;
+}
+
+.card__button{
+  display: inline-block;
+  background-color: var(--doncella-turquoise-color);
+  padding: .75rem 1.5rem;
+  border-radius: .25rem;
+  color: var(--doncella-white-color);
+  text-decoration: none;
+  font-weight: 600;
+}
 
 
 /* Swiper class */
