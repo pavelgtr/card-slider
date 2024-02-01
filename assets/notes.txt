@@ -1,0 +1,183 @@
+<div class="card">
+            <div class="image-content">
+              <span class="overlay"></span>
+              <div class="card-image">
+                <img src="./assets/casa.png" alt="limpieza casa" class="card-img">
+              </div>
+            </div>
+            <div class="card-content">
+              <h2 class="card-title">PARA TU CASA</h2>
+              <h3 class="card-service-type">Auxiliar</h3>
+              <p class="description">¿No sabes si limpiar la casa o ponerla a la venta? Solicita una Limpieza Profunda,
+                nuestro servicio más completo para limpieza del hogar.</p>
+              <button class="button"> LEER MAS</button>
+            </div>
+          </div>
+
+<div class="card">
+            <div class="image-content">
+              <span class="overlay"></span>
+              <div class="card-image">
+                <img src="./assets/negocio.png" alt="limpieza negocia" class="card-img">
+              </div>
+            </div>
+            <div class="card-content">
+              <h2 class="card-title">PARA TU NEGOCIO</h2>
+              <h3 class="card-service-type">Conserjería</h3>
+              <p class="description">¡Concéntrate en tu negocio! Solicita nuestro servicio de limpieza y conserjería para tu
+                negocio y atención al personal en la oficina.</p>
+              <button class="button"> LEER MAS</button>
+            </div>
+          </div>
+          <div class="card">
+            <div class="image-content">
+              <span class="overlay"></span>
+              <div class="card-image">
+                <img src="./assets/360.png" alt="limpieza 360" class="card-img">
+              </div>
+            </div>
+            <div class="card-content">
+              <h2 class="card-title">LIMPIEZA 360</h2>
+              <h3 class="card-service-type">Conserjería</h3>
+              <p class="description">Nuestro servicio de lavado mecanizado de muebles, incluye un sistema de inyección y
+                succión para la extracción de suciedades y la eliminación de manchas.</p>
+              <button class="button"> LEER MAS</button>
+            </div>
+          </div>
+          <div class="card">
+            <div class="image-content">
+              <span class="overlay"></span>
+              <div class="card-image">
+                <img src="./assets/airbnb.png" alt="PARA TU CASA" class="card-img">
+              </div>
+            </div>
+            <div class="card-content">
+              <h2 class="card-title">PARA TU CASA</h2>
+              <h3 class="card-service-type">Airbnb</h3>
+              <p class="description">Te ayudamos a convertirte en un anfitrión de 5 estrellas. Solicita nuestro servicios
+                para la limpieza, desinfección y administración de tu propiedad.</p>
+              <button class="button"> LEER MAS</button>
+            </div>
+          </div>
+              <!-- CARDS -->
+          <div class="card">
+            <div class="image-content">
+              <span class="overlay"></span>
+              <div class="card-image">
+                <img src="./assets/casa.png" alt="limpieza casa" class="card-img">
+              </div>
+            </div>
+            <div class="card-content">
+              <h2 class="card-title">PARA TU CASA</h2>
+              <h3 class="card-service-type">Auxiliar</h3>
+              <p class="description">¿No sabes si limpiar la casa o ponerla a la venta? Solicita una Limpieza Profunda,
+                nuestro servicio más completo para limpieza del hogar.</p>
+              <button class="button"> LEER MAS</button>
+            </div>
+          </div>
+          <div class="card">
+            <div class="image-content">
+              <span class="overlay"></span>
+              <div class="card-image">
+                <img src="./assets/negocio.png" alt="limpieza negocia" class="card-img">
+              </div>
+            </div>
+            <div class="card-content">
+              <h2 class="card-title">PARA TU NEGOCIO</h2>
+              <h3 class="card-service-type">Conserjería</h3>
+              <p class="description">¡Concéntrate en tu negocio! Solicita nuestro servicio de limpieza y conserjería para tu
+                negocio y atención al personal en la oficina.</p>
+              <button class="button"> LEER MAS</button>
+            </div>
+          </div>
+      
+          <div class="card">
+            <div class="image-content">
+              <span class="overlay"></span>
+              <div class="card-image">
+                <img src="./assets/360.png" alt="limpieza 360" class="card-img">
+              </div>
+            </div>
+            <div class="card-content">
+              <h2 class="card-title">LIMPIEZA 360</h2>
+              <h3 class="card-service-type">Conserjería</h3>
+              <p class="description">Nuestro servicio de lavado mecanizado de muebles, incluye un sistema de inyección y
+                succión para la extracción de suciedades y la eliminación de manchas.</p>
+              <button class="button"> LEER MAS</button>
+            </div>
+          </div>
+          <div class="card">
+            <div class="image-content">
+              <span class="overlay"></span>
+              <div class="card-image">
+                <img src="./assets/airbnb.png" alt="PARA TU CASA" class="card-img">
+              </div>
+            </div>
+            <div class="card-content">
+              <h2 class="card-title">PARA TU CASA</h2>
+              <h3 class="card-service-type">Airbnb</h3>
+              <p class="description">Te ayudamos a convertirte en un anfitrión de 5 estrellas. Solicita nuestro servicios
+                para la limpieza, desinfección y administración de tu propiedad.</p>
+              <button class="button"> LEER MAS</button>
+            </div>
+          </div>
+          <div class="card">
+            <div class="image-content">
+              <span class="overlay"></span>
+              <div class="card-image">
+                <img src="./assets/casa.png" alt="limpieza casa" class="card-img">
+              </div>
+            </div>
+            <div class="card-content">
+              <h2 class="card-title">PARA TU CASA</h2>
+              <h3 class="card-service-type">Auxiliar</h3>
+              <p class="description">¿No sabes si limpiar la casa o ponerla a la venta? Solicita una Limpieza Profunda,
+                nuestro servicio más completo para limpieza del hogar.</p>
+              <button class="button"> LEER MAS</button>
+            </div>
+          </div>
+          <div class="card">
+            <div class="image-content">
+              <span class="overlay"></span>
+              <div class="card-image">
+                <img src="./assets/negocio.png" alt="limpieza negocia" class="card-img">
+              </div>
+            </div>
+            <div class="card-content">
+              <h2 class="card-title">PARA TU NEGOCIO</h2>
+              <h3 class="card-service-type">Conserjería</h3>
+              <p class="description">¡Concéntrate en tu negocio! Solicita nuestro servicio de limpieza y conserjería para tu
+                negocio y atención al personal en la oficina.</p>
+              <button class="button"> LEER MAS</button>
+            </div>
+          </div>
+          <div class="card">
+            <div class="image-content">
+              <span class="overlay"></span>
+              <div class="card-image">
+                <img src="./assets/360.png" alt="limpieza 360" class="card-img">
+              </div>
+            </div>
+            <div class="card-content">
+              <h2 class="card-title">LIMPIEZA 360</h2>
+              <h3 class="card-service-type">Conserjería</h3>
+              <p class="description">Nuestro servicio de lavado mecanizado de muebles, incluye un sistema de inyección y
+                succión para la extracción de suciedades y la eliminación de manchas.</p>
+              <button class="button"> LEER MAS</button>
+            </div>
+          </div>
+          <div class="card">
+            <div class="image-content">
+              <span class="overlay"></span>
+              <div class="card-image">
+                <img src="./assets/airbnb.png" alt="PARA TU CASA" class="card-img">
+              </div>
+            </div>
+            <div class="card-content">
+              <h2 class="card-title">PARA TU CASA</h2>
+              <h3 class="card-service-type">Airbnb</h3>
+              <p class="description">Te ayudamos a convertirte en un anfitrión de 5 estrellas. Solicita nuestro servicios
+                para la limpieza, desinfección y administración de tu propiedad.</p>
+              <button class="button"> LEER MAS</button>
+            </div>
+          </div>
