@@ -30,3 +30,8 @@ let swiperCards = new Swiper('.card__content', {
     },
   }
 });
+
+// button for registration 
+document.getElementById('submitArrow').addEventListener('click', function() {
+  window.location.href = 'https://doncella.com.do/#contacto';
+});
