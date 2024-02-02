@@ -1,5 +1,7 @@
 
 let swiperCards = new Swiper('.card__content', {
+  // observer: true,
+  // observeParents: true,
   loop: false,
   spaceBetween: 32,
   slidesPerView: 3, 
@@ -17,7 +19,7 @@ let swiperCards = new Swiper('.card__content', {
   },
 
   breakpoints: {
-    512:{
+    420:{
       slidesPerView: 1
     },
     600:{
@@ -26,5 +28,5 @@ let swiperCards = new Swiper('.card__content', {
     968:{
       slidesPerView: 3
     },
-  },
+  }
 });
