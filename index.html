@@ -18,11 +18,17 @@
     <header>
         <div id="logo-contact-container">
 
-            <img id="logo-img" src="./assets/Logo_Doncella.png" alt="Doncella Logo">
+            <!-- <img id="logo-img" src="./assets/Logo_Doncella.png" alt="Doncella Logo"> -->
+            <picture>
+                <source srcset="./assets/Logo_Doncella_mobile.png" media="(max-width: 720px)">
+                <img id="logo-img" src="./assets/Logo_Doncella.png" alt="Doncella Logo">
+              </picture>
             <div class="contact-container">
                 <button>contáctanos</button>
             </div>
         </div>
+
+       
 
         <div class="hero">
             <h3>YA CASI EN<br>PUNTA CANA</h3>
@@ -161,51 +167,62 @@
     </section>
 
 <!-- CONTACT FORM  -->
-<section class="contact-form-section">
-    <h2>CONTÁCTANOS</h2>
-    <h4>Regístrate y te notificamos</h4>
-    <form action="/submit-form" method="post">
-      <div class="form-row">
-        <div class="input-group">
-          <label for="first-name">Nombre:<span class="asterisk">*</span></label>
-          <input type="text" id="first-name" name="first_name" required>
-        </div>
-        <div class="input-group">
-          <label for="last-name">Apellido:<span class="asterisk">*</span></label>
-          <input type="text" id="last-name" name="last_name" required>
-        </div>
-      </div>
-      <div class="form-row">
-        <div class="input-group">
-          <label for="email">E-mail:<span class="asterisk">*</span></label>
-          <input type="email" id="email" name="email" required>
-        </div>
-        <div class="input-group">
-          <label for="phone">Teléfono:<span class="asterisk">*</span></label>
-          <input type="tel" id="phone" name="phone" required>
-        </div>
-      </div>
-      <div class="input-group">
-        <label for="message">Mensaje:<span class="asterisk">*</span></label>
-        <textarea id="message" name="message" required></textarea>
-      </div>
-      <button class="submit-button" type="submit">Enviar</button>
-      <!-- </form> -->
 
- <!-- interest -->
+<h2>CONTÁCTANOS</h2>
+  <h3>Regístrate y te notificamos</h3>
 
- <div class="services-form">
-    <input type="radio" id="interestRESIDENTIAL" name="interest" value="residential" class="service-input">
-    <label for="interestRESIDENTIAL" class="service-label">Auxiliar Doncella</label>
-    <input type="radio" id="interestBUSINESS" name="interest" value="business" class="service-input">
-    <label for="interestBUSINESS" class="service-label">Limpieza 360</label>
-    <input type="radio" id="interestEMPLOYMENT" name="interest" value="employment" class="service-input">
-    <label for="interestEMPLOYMENT" class="service-label">Conserjería Negocios</label>
-    <input type="radio" id="interestOTHER" name="interest" value="other" class="service-input">
-    <label for="interestOTHER" class="service-label">AirBnB</label>
+  <form action="example.com/path" method="post">
+    <div class="input-container">
+      <div class="label-input-container">
+        <label for="first_name">First Name:<span>*</span></label>
+        <input type="text" name="first_name" id="first_name" required>
+      </div>
+      <div class="label-input-container">
+        <label for="last_name">Last Name:<span>*</span></label>
+        <input type="text" name="last_name" id="last_name" required>
+      </div>
+      <div class="label-input-container">
+        <label for="email_input">E-mail:<span>*</span></label>
+        <input type="email" name="E-mail" id="email_input" required>
+      </div>
+      <div class="label-input-container">
+        <label for="cel_input">Phone number<span>*</span></label>
+        <input type="text" name="Phone" id="cel_input" required pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
+          placeholder="123-456-7890">
+      </div>
+      <div class="label-input-container message-container">
+        <label for="message">Message</label>
+        <textarea name="message" id="message" required></textarea>
+      </div>
+    </div>
+  </form>
+
+  <legend>servicios<span>*</span></legend>
+  <div class="radio-container">
+    <div>
+      <input type="radio" id="residence" name="service_type" value="residence" checked>
+      <label for="residence">Residence</label>
+    </div>
+    <div>
+      <input type="radio" id="home" name="service_type" value="home">
+      <label for="home">Home</label>
+    </div>
+    <div>
+      <input type="radio" id="employment" name="service_type" value="employment">
+      <label for="employment">Employment</label>
+    </div>
+    <div>
+      <input type="radio" id="other" name="service_type" value="other">
+      <label for="other">Other</label>
+    </div>
   </div>
-</form>
-</section>
+
+  <div class="input-button"><button type="submit" id="submit-form-button">Envia</button></div>
+
+
+
+
+<!-- FOOTER -->
 
 <footer>
 <div class="footer-banner">
