@@ -1,11 +1,9 @@
 
 let swiperCards = new Swiper('.card__content', {
-  // observer: true,
-  // observeParents: true,
   loop: false,
-  spaceBetween: 32,
   slidesPerView: 3, 
   grabCursor: true,
+  // autoHeight: true,
   pagination: {
     el: '.swiper-pagination',
     clickable: true, 
@@ -19,14 +17,17 @@ let swiperCards = new Swiper('.card__content', {
   },
 
   breakpoints: {
-    420:{
-      slidesPerView: 1
+    320:{
+      slidesPerView: 1,
+      spaceBetween: 20
     },
-    600:{
-      slidesPerView: 2
+    820:{
+      slidesPerView: 2,
+      spaceBetween: 30
     },
-    968:{
-      slidesPerView: 3
+    1093:{
+      slidesPerView: 3,
+      spaceBetween: 40
     },
   }
 });
