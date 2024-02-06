@@ -253,7 +253,7 @@ header {
   .countdown-banner {
     max-width: 100%;
     padding: 3rem 15rem;
-    border: var(--red-border-test);
+    /* border: var(--red-border-test); */
   }
   
   .countdown-item {
