@@ -303,6 +303,7 @@ header {
   /* height: 100vh; */
 }
 
+
 .card__container {
   /* padding-block: 5rem; */
   /* width: 1500px; */
@@ -317,6 +318,7 @@ header {
   width: auto;
   overflow: hidden;
   /* height: 70vh; */
+  border: var(--red-border-test);
 }
 
 .card__image {
@@ -331,8 +333,6 @@ header {
   background-color: var(--doncella-grey-color);
   padding: 1rem 1rem;
   text-align: center;
-  /* position: relative; */
-  /* z-index: 10; */
 }
 
 .swiper-wrapper .card__article:nth-child(2) .card__description {
@@ -348,15 +348,10 @@ header {
 .swiper {
   width: auto;
   height: 80vh;
-  /* border: 2px solid pink; */
 }
 .card__img {
-  /* width: 180px; */
   width: 100%;
   height: auto;
-  /* margin: 0 auto; */
-  /* Remove margin if you want the image to stretch to the edges */
-  /* margin: 0 auto; */
   display: block;
   position: relative;
   z-index: 5;
@@ -365,8 +360,6 @@ header {
 .card__shadow {
   width: 200px;
   height: 200px;
-  /* background-color: var(--doncella-light-blue-color); */
-  /* border-radius: 50%; */
   position: absolute;
   top: 3.75rem;
   left: 0;
@@ -403,6 +396,7 @@ header {
   color: var(--doncella-white-color);
   text-decoration: none;
   font-weight: 600;
+ 
 }
 
 /* Swiper class */
@@ -418,6 +412,7 @@ header {
 
 .swiper-button-next,
 .swiper-button-prev {
+  display: block;
   width: initial;
   height: initial;
   font-size: 3rem;
@@ -426,6 +421,7 @@ header {
 
 .swiper-button-prev {
   left: 1;
+  
 }
 .swiper-button-next {
   right: 0.6;
