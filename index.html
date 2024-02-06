@@ -22,7 +22,7 @@
             <picture>
                 <source srcset="./assets/Logo_Doncella_mobile.png" media="(max-width: 720px)">
                 <img id="logo-img" src="./assets/Logo_Doncella.png" alt="Doncella Logo">
-              </picture>
+            </picture>
             <div class="contact-container">
                 <button>contáctanos</button>
             </div>
@@ -38,7 +38,7 @@
                     para despedirte del desorden y darle la bienvenida a una casa y negocio radiante? </p><br>
                 <p class="header-text">Regístrate para enterarte.</p>
             </div>
-        
+
             <!-- EMAIL INPUT  -->
             <div id="input-container">
                 <input type="email" id="email" required placeholder="E-mail">
@@ -86,7 +86,7 @@
     <!-- SERVICES -->
 
     <div class="services-heading">
-        <h2 id="Services-location">PUNTA CANA + BÁVARO</h2>
+        <h2 id="Services-location">PUNTA CANA + BÁVARO</h2><br>
         <h3 id="Services-subtitle">Servicios</h3>
     </div>
 
@@ -168,89 +168,98 @@
         </div>
     </section>
 
-<!-- CONTACT FORM  -->
+    <!-- CONTACT FORM  -->
 
-<h2>CONTÁCTANOS</h2>
-  <h3>Regístrate y te notificamos</h3>
+    <h2>CONTÁCTANOS</h2>
+    <h3>Regístrate y te notificamos</h3>
 
-  <form action="example.com/path" method="post">
-    <div class="input-container">
-      <div class="label-input-container">
-        <label for="first_name">First Name:<span>*</span></label>
-        <input type="text" name="first_name" id="first_name" required>
-      </div>
-      <div class="label-input-container">
-        <label for="last_name">Last Name:<span>*</span></label>
-        <input type="text" name="last_name" id="last_name" required>
-      </div>
-      <div class="label-input-container">
-        <label for="email_input">E-mail:<span>*</span></label>
-        <input type="email" name="E-mail" id="email_input" required>
-      </div>
-      <div class="label-input-container">
-        <label for="cel_input">Phone number<span>*</span></label>
-        <input type="text" name="Phone" id="cel_input" required pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
-          placeholder="123-456-7890">
-      </div>
-      <div class="label-input-container message-container">
-        <label for="message">Message</label>
-        <textarea name="message" id="message" required></textarea>
-      </div>
+    <form action="example.com/path" method="post">
+        <div class="input-container">
+            <div class="label-input-container">
+                <label for="first_name">First Name:<span>*</span></label>
+                <input type="text" name="first_name" id="first_name" required>
+            </div>
+            <div class="label-input-container">
+                <label for="last_name">Last Name:<span>*</span></label>
+                <input type="text" name="last_name" id="last_name" required>
+            </div>
+            <div class="label-input-container">
+                <label for="email_input">E-mail:<span>*</span></label>
+                <input type="email" name="E-mail" id="email_input" required>
+            </div>
+            <div class="label-input-container">
+                <label for="cel_input">Phone number<span>*</span></label>
+                <input type="text" name="Phone" id="cel_input" required pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
+                    placeholder="123-456-7890">
+            </div>
+            <div class="label-input-container message-container">
+                <label for="message">Message</label>
+                <textarea name="message" id="message" required></textarea>
+            </div>
+        </div>
+    </form>
+
+    <legend>servicios<span>*</span></legend>
+    <div class="radio-container">
+        <div>
+            <input type="radio" id="residence" name="service_type" value="residence" checked>
+            <label for="residence">Residence</label>
+        </div>
+        <div>
+            <input type="radio" id="home" name="service_type" value="home">
+            <label for="home">Home</label>
+        </div>
+        <div>
+            <input type="radio" id="employment" name="service_type" value="employment">
+            <label for="employment">Employment</label>
+        </div>
+        <div>
+            <input type="radio" id="other" name="service_type" value="other">
+            <label for="other">Other</label>
+        </div>
     </div>
-  </form>
 
-  <legend>servicios<span>*</span></legend>
-  <div class="radio-container">
-    <div>
-      <input type="radio" id="residence" name="service_type" value="residence" checked>
-      <label for="residence">Residence</label>
-    </div>
-    <div>
-      <input type="radio" id="home" name="service_type" value="home">
-      <label for="home">Home</label>
-    </div>
-    <div>
-      <input type="radio" id="employment" name="service_type" value="employment">
-      <label for="employment">Employment</label>
-    </div>
-    <div>
-      <input type="radio" id="other" name="service_type" value="other">
-      <label for="other">Other</label>
-    </div>
-  </div>
-
-  <div class="input-button"><button type="submit" id="submit-form-button">Envia</button></div>
+    <div class="input-button"><button type="submit" id="submit-form-button">Envia</button></div>
 
 
 
 
-<!-- FOOTER -->
+    <!-- FOOTER -->
 
-<footer>
-<div class="footer-banner">
-  <img src="./assets/Logo_Doncella.png" alt="Logo" class="footer-logo">
-  <div class="footer-content">
-    <div class="footer-social-media">
-      <a href="#"><img src="./assets/Phone-logo.png" alt="Phone"></a>
-      <a href="#"><img src="./assets/facebook-logo.png" alt="Facebook"></a>
-      <a href="#"><img src="./assets/twitter-logo.png" alt="Twitter"></a>
-      <a href="#"><img src="./assets/pinterest-logo.png" alt="Pinterest"></a>
-      <a href="#"><img src="./assets/instagram-logo.png" alt="Instagram"></a>
-    </div>
-    <div class="footer-list">
-      <ul>
-        <li>&copy; Doncella SRL 2024</li>
-        <li><a href="#">Santo Domingo</a></li>
-        <li><a href="#">Santiago</a></li>
-        <li><a href="#">Punta Cana</a></li>
-        <li><a href="tel:809-638-6572">809-638-6572</a></li>
-        <li><a href="#">Políticas de Privacidad</a></li>
-        <li><a href="#">Site Map</a></li>
-      </ul>
-    </div>
-  </div>
-</div>
-</footer>
+    <footer>
+        <div class="footer-banner">
+
+            <div class="footer-content">
+                <div class="footer-social-media">
+                    <a href="#"><img src="./assets/Phone-logo.png" alt="Phone"></a>
+                    <a href="#"><img src="./assets/facebook-logo.png" alt="Facebook"></a>
+                    <a href="#"><img src="./assets/twitter-logo.png" alt="Twitter"></a>
+                    <a href="#"><img src="./assets/pinterest-logo.png" alt="Pinterest"></a>
+                    <a href="#"><img src="./assets/instagram-logo.png" alt="Instagram"></a>
+                </div>
+                <div>
+                    <ul class="footer-list">
+                        <li> <img src="./assets/Logo_Doncella.png" alt="Logo" id="footer-logo"></li>
+                        <div class="links">
+                            <li>&copy; Doncella SRL 2024</li>
+                            <li>|</li>
+                            <li><a href="#">Santo Domingo</a></li>
+                            <li>|</li>
+                            <li><a href="#">Santiago</a></li>
+                            <li>|</li>
+                            <li><a href="#">Punta Cana</a></li>
+                            <li>|</li>
+                            <li><a href="tel:809-638-6572">809-638-6572</a></li>
+                            <li>|</li>
+                            <li><a href="#">Políticas de Privacidad</a></li>
+                            <li>|</li>
+                            <li><a href="#">Site Map</a></li>
+                        </div>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
 
 
     <!-- SWIPER JS -->

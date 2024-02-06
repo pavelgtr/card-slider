@@ -88,8 +88,10 @@ header {
 }
 
 @media screen and (max-width: 720px) {
+
+
   #logo-contact-container {
-    width: 600px;
+    max-width: 90%;
   }
   .contact-container button {
     font-size: 0.5rem;
@@ -111,17 +113,16 @@ header {
   .hero h3 {
     font-size: 3rem;
     margin-top: 20rem;
-    width: 100vw;
+    width: 100%;
   }
 
   .background-image-top {
-    background-position: right;
-    height: 65vh;
-    width: 120vw;
+    background-position: center center;
+    height: 600px;
   }
 
   .hero-description-email-container {
-    /* border: var(--red-border-test); */
+    
     padding-left: 1.5rem;
   }
 
@@ -130,9 +131,21 @@ header {
   }
 
   .header-description {
-    width: 70vw;
+    width: 70%;
   }
 }
+
+/* MOBILE */
+
+@media screen and (max-width: 600px) {
+  html, body {
+    overflow-x: hidden;
+  }
+  .background-image-top {
+    width: 100%;
+  }
+}
+
 
 #logo-img {
   max-width: 18rem;
@@ -149,9 +162,6 @@ header {
   font-weight: 500;
   border-radius: 0.5rem;
 }
-
-/* WORKING UNTIL HERE */
-
 
 
 /* EMAIL INPUT  */
@@ -197,20 +207,21 @@ header {
   width: 3.5rem; /* Adjust as needed */
 }
 
+
 /* BANNER */
 
 .countdown-banner {
   background-color: var(--main-color);
-  background-position: center; 
+  /* background-position: center;  */
   max-width: 100%;
   display: flex;
   justify-content: center;
   font-size: 2rem;
   padding: 3rem 15rem;
+  
 }
 
 .countdown-item {
-  /*  centers number and date text  */
   text-align: center;
   margin: 0 5rem;
 }
@@ -228,21 +239,59 @@ header {
   color: #ffffff;
 }
 
+@media screen and (max-width: 720px) {
+  body {
+    overflow-x: hidden;
+  }
+
+  .countdown-banner {
+    max-width: 100%;
+    padding: 3rem 15rem;
+    border: var(--red-border-test);
+  }
+  
+  .countdown-item {
+    text-align: center;
+    margin: 0 1.5rem;
+  }
+  
+  .countdown-number {
+    font-size: 2rem; /* Adjust size as needed */
+    font-weight: bold;
+    color: #ffffff;
+  }
+  
+  .countdown-label {
+    font-size: 1rem;
+    /* text-transform: uppercase; */
+    display: block; /* Makes it go to the next line */
+    color: #ffffff;
+  }
+}
+
+/* @media screen and (max-width: 600px) {
+
+} */
+
 /* SERVICES HEADING  */
 
 .services-heading {
-  margin: 5rem 0 0 0;
+  margin: 5rem 0 5rem 0;
   text-align: center;
   font-family: var(--main-font-family);
+  /* border: var(--red-border-test); */
+  padding: 2rem;
 }
 
 .services-heading h2 {
   color: var(--doncella-turquoise-color);
   font-size: 2rem;
+  font-weight: 400;
 }
 
 .services-heading h3 {
   font-size: 2rem;
+  font-weight: 400;
 }
 
 /* ====================CARD==================== */
@@ -401,7 +450,7 @@ header {
 }
 
 /* for medium devices */
-@media screen and (min-width: 768px) {
+@media screen and (max-width: 720px) {
   .card__content {
     margin-inline: 3rem;
   }
@@ -655,55 +704,127 @@ legend {
 
 /* FOOTER LIST  */
 
+
+/* footer {
+  display: flex;
+flex-direction: column;
+
+} */
+
+
 .footer-banner {
-  margin-top: 0vh;
+  background-color: #00adb5;
+  width: 100%;
+}
+
+.footer-list {
+  color: var(--doncella-white-color);
+  display: flex;
+  list-style: none;
+  width: 100%;
+  font-size: 14px;
+  align-items: end;
+  margin-left: 50px;
+  border: var(--red-border-test);
+}
+
+.footer-list #footer-logo {
+
+  width: 300px;
+}
+
+.footer-list .links{
+
+  color: var(--doncella-white-color);
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  margin-left: 10rem;
+  width: 70%;
+  gap: 1rem;
+  padding: 10px;
+}
+
+.footer-list a {
+  color: var(--doncella-white-color);
+}
+
+.footer-content {
+
+  display: block;
+}
+
+.footer-social-media {
+  
+  display: flex;
+  justify-content: space-evenly;
+  width: 30%;
+  margin-left: auto;
+  margin-right: 10rem;
+}
+
+
+/* .footer-banner {
+  margin-top: 10vh;
   display: flex;
   align-items: center;
-  background-color: #00adb5; /* Adjust the color to match your design */
-  padding: 10vh 10vw; /* Adjusted to have padding on both sides */
-  justify-content: space-between; /* Aligns children to the edges */
+  flex-wrap: wrap;
+  background-color: #00adb5; 
+  padding: 10vh 10vw;
+  justify-content: space-between; 
+  
 }
 
 .footer-logo {
-  height: auto; /* Maintain aspect ratio */
-  width: 10vw; /* Adjust the width to make the logo smaller */
-  margin-right: 20px; /* Creates space between the logo and the list */
+  height: auto; 
+  width: 10vw; 
+  margin-right: 20px; 
 }
+
 .footer-list {
   text-align: center;
-  padding: 10px 0; /* Adjust padding to match your design */
+  padding: 10px 0; 
   flex-grow: 1;
+  
 }
 
 .footer-list ul {
-  list-style: none; /* Removes default list styling */
+  list-style: none; 
   padding: 0;
   margin: 0;
-  display: flex; /* Use flexbox for horizontal alignment */
-  flex-wrap: wrap; /* Allows list items to wrap on smaller screens */
-  justify-content: center; /* Centers items horizontally */
-  gap: 20px; /* Adjust the space between list items */
+  display: flex; 
+  flex-wrap: wrap; 
+  justify-content: center; 
+  gap: 20px; 
   align-items: center;
 }
 
 .footer-list li {
-  display: inline; /* Inline display for list items */
+  display: inline; 
 }
 
 .footer-list a {
-  color: #ffffff; /* Adjust link color to match your design */
-  text-decoration: none; /* Removes underline from links */
+  color: #ffffff; 
+  text-decoration: none; 
 }
 
 .footer-social-media {
   display: flex;
-  gap: 10px; /* Adjust the gap between icons */
+  gap: 10px; 
   justify-content: flex-end;
   margin-right: 5vw;
   margin-bottom: 1vh;
 }
 
 .footer-social-media a img {
-  width: 2vw; /* Adjust size of social media icons */
+  width: 2vw; 
   height: auto;
-}
+} */
+
+
+/* @media screen and (max-width: 720px) {
+  .footer-logo {
+    width: 30vw; 
+  }
+  
+} */
