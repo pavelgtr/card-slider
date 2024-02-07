@@ -1,31 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;1,100;1,200;1,400&display=swap");
 
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: "Poppins", sans-serif;
-}
-
-img {
-  display: block;
-  max-width: 100%;
-  height: auto;
-}
-
-body {
-  overflow-x: hidden;
-}
-
-@media screen and (max-width: 1124px) { 
-  header {
-    padding-left: 40px; 
-    padding-right: 40px;
-  }
-
-}
-
-
 :root {
   --doncella-turquoise-color: #5fcfd5;
   --doncella-grey-color: #fafafa;
@@ -39,181 +13,140 @@ body {
   --red-border-test: 2px solid red;
 }
 
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
 
-/* WORKING FROM HERE */
+img {
+  display: block;
+  /* max-width: 100%; */
+  /* height: auto; */
+}
+
+body {
+  overflow-x: hidden;
+}
+
+/* <------------------------------------------ HEADER ------------------------------------------> */
 
 header {
   width: 100vw;
   height: auto;
-  position: relative;
+  background-image: url(../assets/top-image-clean.png);
+  background-size: cover;
+  background-position: 0 0;
+  background-attachment: local;
+  background-repeat: no-repeat;
 }
 
-.background-image-top {
-   background-image: url(../assets/top-image-clean.png);
-   background-size: cover;
-   /* background-position: center center;  */
-   background-repeat: no-repeat; 
-   width: 100%; 
-   height: 100%; 
-   position: absolute; 
-   top: 0;
-   left: 0;
-   z-index: -1;
+@media screen and (width <= 480px) {
+  header {
+    background-size: 200vw auto;
+    background-position: -95vw -15vh;
+  }
+
+  body,
+  html {
+    overflow-x: hidden;
+  }
 }
 
+.hero-description-email-container {
+}
+
+header {
+  padding: 3% 15% 0 15%;
+}
+
+/* top logo and contact button  */
 #logo-contact-container {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin: 0 auto;
-  padding: 1rem 0;
-  min-width: 600px;
-  max-width: 1200px;
 }
 
-@media screen and (max-width: 1124px){
-  #logo-contact-container {
-    min-width: 600px;
-    max-width: 700px;
+/* Doncella logo  */
+header #logo-img {
+  width: 50%;
+}
+
+
+
+.contact-container button {
+  background: var(--doncella-turquoise-color);
+  font-family: var(--main-font-family);
+  font-size: 0.7rem;
+  text-transform: uppercase;
+  color: #ffffff;
+  letter-spacing: 0.07rem;
+  padding: 0.8rem 1.2rem;
+  border: none;
+  font-weight: 500;
+}
+
+@media screen and (width <= 480px) {
+  .contact-container button {
+    display: none;
   }
+
+  header #logo-img {
+    width: auto;
+    height: auto;
+    margin-top: 3rem;
+    margin-left: 15vw;
+    margin-right: auto;
+  }
+  
+
 }
 
 .hero h3 {
   font-family: Helvetica, var(--main-font-family);
   color: #00adbb;
-  /* font-size: 5rem; */
-  letter-spacing: -0.6px;
-  line-height: 68px;
   font-weight: 400;
   display: flex;
   text-align: left;
-  margin-top: 15rem;
-
-  font-size: 80px;
-  letter-spacing: -0.6px;
-
+  margin-top: 12rem;
+  font-size: clamp(85px, 4vw, 100px);
 }
 
 .header-description {
   opacity: 0.7;
   font-family: Helvetica;
-  font-size: 18px;
+  font-size: clamp(18px, 3vw, 20px);
   color: #272727;
   letter-spacing: 0;
   line-height: 24px;
   max-width: 515px;
-}
-
-.header-text {
   font-family: var(--main-font-family);
-  font-size: 1.5rem;
-  /* font-size: 18px; */
 }
 
-.hero-description-email-container {
-
-  display: flex;
-  flex-direction: column;
-  gap: 2rem;
-  min-width: 600px;
-  max-width: 1200px;
-  margin: 0 auto;
-}
-
-
-
-
-/* STAYED HERE *************************************** */
-@media screen and (max-width: 1124px){
- .hero-description-email-container {
-    border: var(--red-border-test);
-  }
-}
-
-header #logo-img {
-  max-width: 250px;
-}
-
-
-
-@media screen and (max-width: 720px) {
-
-
-  #logo-contact-container {
-    max-width: 90%;
-  }
-  .contact-container button {
-    font-size: 0.5rem;
-    padding: 0.5rem;
-
-  }
-
-  #logo-img {
-    margin-top: 2rem;
-    margin-left: 1rem;
-    max-width: 200px;
-
-    
-    /* You can also use percentages, e.g., width: 100%; if you want it to be responsive */
-  }
-
-  .contact-container button {
-    display: none;
-  }
-
+@media screen and (width <= 480px) {
   .hero h3 {
-    font-size: 3rem;
+    font-size: 40px;
+    letter-spacing: -0.3px;
+    line-height: 35px;
     margin-top: 20rem;
-    width: 100%;
-  }
-
-  .background-image-top {
-    background-position: center center;
-    max-height: 600px;
-  }
-
-  .hero-description-email-container {
     
-    padding-left: 1.5rem;
-  }
-
-  .header-text {
-    font-size: 1.2rem;
   }
 
   .header-description {
-    width: 70%;
+    opacity: 0.7;
+    font-size: 16px;
+    color: #272727;
+    letter-spacing: 0;
+    line-height: 24px;
   }
 }
 
-/* MOBILE */
-
-@media screen and (max-width: 600px) {
-  html, body {
-    overflow-x: hidden;
-  }
-  .background-image-top {
-    width: 100%;
-  }
+.hero-description-email-container {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
 }
-
-
-#logo-img {
-  max-width: 18rem;
-}
-
-.contact-container button {
-  background: var(--main-color);
-  font-family: var(--main-font-family);
-  font-size: 1rem;
-  color: #ffffff;
-  /* letter-spacing: 0.2rem; */
-  padding: 1rem;
-  border: none;
-  font-weight: 500;
-  border-radius: 0.5rem;
-}
-
 
 /* EMAIL INPUT  */
 
@@ -235,7 +168,7 @@ header #logo-img {
   font-size: 1rem;
   letter-spacing: 0;
   line-height: 1.5rem;
- 
+
   margin-bottom: 5rem;
 }
 
@@ -258,7 +191,6 @@ header #logo-img {
   width: 3.5rem; /* Adjust as needed */
 }
 
-
 /* BANNER */
 
 .countdown-banner {
@@ -267,7 +199,6 @@ header #logo-img {
   justify-content: center;
   padding: 3rem;
 }
-
 
 .countdown-item {
   text-align: center;
@@ -287,43 +218,6 @@ header #logo-img {
   color: #ffffff;
 }
 
-@media screen and (max-width: 1124px) { 
-
-  
-}
-
-@media screen and (max-width: 720px) {
-  body {
-    overflow-x: hidden;
-  }
-
-  .countdown-banner {
-    max-width: 100%;
-    padding: 3rem 15rem;
-    /* border: var(--red-border-test); */
-  }
-  
-  .countdown-item {
-    text-align: center;
-    margin: 0 1.5rem;
-  }
-  
-  .countdown-number {
-    font-size: 2rem; /* Adjust size as needed */
-    font-weight: bold;
-    color: #ffffff;
-  }
-  
-  .countdown-label {
-    font-size: 1rem;
-    /* text-transform: uppercase; */
-    display: block; /* Makes it go to the next line */
-    color: #ffffff;
-  }
-}
-
-
-
 /* SERVICES HEADING  */
 
 .services-heading {
@@ -331,7 +225,6 @@ header #logo-img {
   text-align: center;
   font-family: var(--main-font-family);
   /* border: var(--red-border-test); */
-
 }
 
 #Services-location {
@@ -345,17 +238,7 @@ header #logo-img {
   font-weight: 400;
 }
 
-
-
-
-
-
-
 /* ====================CARD==================== */
-
-
-
-
 
 .container {
   display: flex;
@@ -363,7 +246,6 @@ header #logo-img {
   align-items: center;
   margin: 0 auto;
   /* height: 10% */
-
 }
 
 .card__container {
@@ -372,13 +254,11 @@ header #logo-img {
   min-height: 700px;
 }
 
-@media screen and (max-width: 1093px){
-
+@media screen and (max-width: 1093px) {
   .card__container {
     max-width: 700px;
     min-width: 500px;
   }
-  
 }
 
 .card__content {
@@ -386,22 +266,17 @@ header #logo-img {
   margin-inline: 5rem;
 }
 
-/* .card__content{
-  
-} */
-
 .card__article {
   width: 100%;
   /* overflow: hidden; */
   min-height: 600px;
   /* width: 300px; */
-
 }
 
 .card__image {
   position: relative;
   background-color: var(--doncella-turquoise-color);
-  margin-bottom: -.75;
+  margin-bottom: -0.75;
   overflow: hidden; /* This will ensure the image stays within the bounds of the container */
 }
 
@@ -411,67 +286,59 @@ header #logo-img {
   text-align: center;
 }
 
- .swiper-wrapper .card__article:nth-child(3) .card__description {
+.swiper-wrapper .card__article:nth-child(3) .card__description {
   font-size: 1rem;
- 
-  margin: 0;
-} 
 
+  margin: 0;
+}
 
 .swiper {
   /* width: auto; */
   /* height: 80vh; */
-
 }
-
 
 .card__img {
   width: 100%;
   /* height: auto; */
   display: block;
-
 }
-
 
 .card__name {
   font-size: 1.5rem;
   font-weight: 300;
   color: var(--doncella-turquoise-color);
-  margin-bottom: .35rem;
-
+  margin-bottom: 0.35rem;
 }
 
 .card__subtitle {
   font-weight: 500;
   font-style: var(--doncella-navy-color);
   font-size: 1rem;
-  margin-bottom: .65rem;
-  
+  margin-bottom: 0.65rem;
 }
 
 .card__description {
   font-weight: 400;
   margin-bottom: 1.75rem;
- 
+
   /* font-size: 1rem; */
 }
 
 .card__button {
   display: inline-block;
   background-color: var(--doncella-turquoise-color);
-  padding: .75rem 1.5rem;
-  margin: .75rem;
-  border-radius: .25rem;
+  padding: 0.75rem 1.5rem;
+  margin: 0.75rem;
+  border-radius: 0.25rem;
   color: var(--doncella-white-color);
   text-decoration: none;
   font-weight: 400;
 }
 
-
 .swiper-button-next,
 .swiper-button-prev {
-    color: rgb(221, 220, 220);
-    position: absolute;
+  color: rgb(221, 220, 220);
+  position: absolute;
 }
 
 .swiper-pagination-bullet-active {
@@ -498,7 +365,7 @@ h2 {
   padding-top: 10rem;
 }
 
-h3 {
+.contact-form-subtitle {
   font-family: AvenirNext-Medium;
   font-size: 26px;
   color: #4a4a4a;
@@ -590,7 +457,6 @@ span {
   margin: 2rem auto;
 }
 
-
 input[type="radio"] {
   display: none;
 }
@@ -612,7 +478,6 @@ input[type="radio"] {
   line-height: 40px;
   cursor: pointer;
   transition: background-color 0.3s ease;
- 
 }
 
 input[type="radio"]:checked + label {
@@ -629,15 +494,16 @@ legend {
   text-align: center;
   color: #788a95;
   font-family: "Avenir Next";
-  /* text-align: center; */
-  /* margin: 0 auto; */
+  /* FOR SAFARI  */
+  margin-left: auto;
+  margin-right: auto;
 }
 
 #submit-form-button {
   display: block; /* Make the button a block element */
- margin-left: auto;
- margin-right: auto;
- margin-top: 3rem;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 3rem;
 
   /* Other styles remain unchanged */
   --rem: 16;
@@ -660,7 +526,7 @@ legend {
   padding-bottom: 100px;
 }
 
-/* MEDIA QUERIES */
+/* MEDIA QUERIES SWIPER */
 
 @media screen and (max-width: 720px) {
   /* input form  */
@@ -698,16 +564,6 @@ legend {
     gap: 2rem;
   }
 
-  /* services selection  */
-
-  /* .radio-container {
-      display: flex;
-      flex-direction: column;
-      justify-content: space-between;
-      height: 200px ;
-      margin-left: 30vw;
-      } */
-
   #submit-form-button {
     margin-left: auto;
     /* border: 2px solid red; */
@@ -716,22 +572,19 @@ legend {
 
 /* FOOTER LIST  */
 
-
- footer {
-display: flex;
-flex-direction: column;
-} 
+footer {
+  display: flex;
+  flex-direction: column;
+}
 
 footer div {
   /* border: var(--red-border-test); */
   padding: 0.5rem;
 }
 
-
 .footer-banner {
   background-color: #00adb5;
   width: 100%;
-
 }
 
 .footer-list {
@@ -749,7 +602,7 @@ footer div {
   display: none;
 }
 
-.footer-list .links{
+.footer-list .links {
   color: var(--doncella-white-color);
   display: flex;
   justify-content: center;
@@ -781,12 +634,8 @@ footer div {
   display: none;
 }
 
-
-
-
 /* Mobile styles */
 @media screen and (max-width: 780px) {
-
   .footer-list #footer-logo {
     display: inline;
   }
@@ -795,30 +644,26 @@ footer div {
     /* max-width: 300px; */
     display: none;
   }
-.footer-social-media {
-  
-  min-width: 60vw;
-  margin-left: auto;
-  margin-right: auto;
-}
+  .footer-social-media {
+    min-width: 60vw;
+    margin-left: auto;
+    margin-right: auto;
+  }
 
-.mobile-bottom {
+  .mobile-bottom {
+    display: flex;
+  }
 
-  display: flex;
-  
-
-}
-  
   .hidden-copyright {
     display: flex;
   }
   .footer-list .links {
-  display: none; 
+    display: none;
   }
-  
+
   .footer-social-media {
     width: 60vw;
-    gap:20px;
+    gap: 20px;
   }
 
   /* .footer-list #footer-logo {
@@ -836,9 +681,7 @@ footer div {
   /* footer div {
     padding: 0.5rem;
   } */
-
 }
-
 
 /* BACKUP CODE IF NEEDED  */
 
@@ -847,3 +690,103 @@ footer div {
   width: 600px;
   height: 300px;
 } */
+
+/* CSS BACKUP  */
+
+/* @media screen and (max-width: 720px) {
+
+
+  #logo-contact-container {
+    max-width: 90%;
+  }
+  .contact-container button {
+    font-size: 0.5rem;
+    padding: 0.5rem;
+
+  }
+
+  #logo-img {
+    margin-top: 2rem;
+    margin-left: 1rem;
+    max-width: 200px;
+
+    
+  }
+
+  .contact-container button {
+    display: none;
+  }
+
+  .hero h3 {
+    font-size: 3rem;
+    margin-top: 20rem;
+    width: 100%;
+  }
+
+  .background-image-top {
+    background-position: center center;
+    max-height: 600px;
+  }
+
+  .hero-description-email-container {
+    
+    padding-left: 1.5rem;
+  }
+
+  .header-text {
+    font-size: 1.2rem;
+  }
+
+  .header-description {
+    width: 70%;
+  }
+}
+
+
+@media screen and (max-width: 600px) {
+  html, body {
+    overflow-x: hidden;
+  }
+  .background-image-top {
+    width: 100%;
+  }
+} */
+
+/* @media screen and (max-width: 720px) {
+  body {
+    overflow-x: hidden;
+  }
+
+  .countdown-banner {
+    max-width: 100%;
+    padding: 3rem 15rem;
+  }
+  
+  .countdown-item {
+    text-align: center;
+    margin: 0 1.5rem;
+  }
+  
+  .countdown-number {
+    font-size: 2rem; 
+    font-weight: bold;
+    color: #ffffff;
+  }
+  
+  .countdown-label {
+    font-size: 1rem;
+    display: block; 
+    color: #ffffff;
+  }
+} */
+
+/* very old  */
+/* services selection  */
+
+/* .radio-container {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      height: 200px ;
+      margin-left: 30vw;
+      } */
