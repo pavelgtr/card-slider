@@ -151,7 +151,7 @@ header #logo-img {
 }
 
 #input-container {
-  display: inline-flex;
+  display: flex;
   border: 1px solid #ccc;
   background-color: #ffffff;
   width: 22rem;
@@ -184,6 +184,12 @@ header #logo-img {
 
 #input-container button img {
   width: 3.5rem; /* Adjust as needed */
+}
+
+@media screen and (width <= 480px) {
+  #input-container {
+    width: rem;
+  }
 }
 
 /* <------------------------------------------ BANNER ------------------------------------------> */
@@ -270,24 +276,34 @@ header #logo-img {
   justify-content: center;
   align-items: center;
   margin: 0 auto;
-   
+    
 }
 
-@media screen and (width <= 480px) {
-  
-}
+
 
 .card__container {
   max-width: 1300px;
-  min-width: 1200px;
+  min-width: 800px;
+  /* width: clamp(50vw, 70vw, 100vw); */
   min-height: 700px;
   /* border: var(--red-border-test); */
+}
+
+@media (width <= 480px) {
+  .card__container {
+    /* max-width: 300px;
+    min-width: 200px; */
+    /* width: clamp(50vw, 70vw, 100vw); */
+    min-height: 700px;
+    /* border: var(--red-border-test); */
+  }
 }
 
 @media screen and (max-width: 1093px) {
   .card__container {
     max-width: 700px;
     min-width: 500px;
+    min-height: 700px;
   }
 }
 
@@ -320,11 +336,6 @@ header #logo-img {
   font-size: 1rem;
 
   margin: 0;
-}
-
-.swiper {
-  /* width: auto; */
-  /* height: 80vh; */
 }
 
 .card__img {
