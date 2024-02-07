@@ -139,11 +139,12 @@ header #logo-img {
 #input-container input {
   font-size: 1rem;
   opacity: 0.6;
-  
 }
 
 #input-container {
-  display: inline-flex;
+  /* display: inline-flex; */
+  /* display: flex; */
+  /* display:-webkit-flex;
   border: 1px solid #ccc;
   background-color: #ffffff;
   width: 22rem;
@@ -155,28 +156,73 @@ header #logo-img {
   font-size: 1rem;
   letter-spacing: 0;
   line-height: 1.5rem;
+ 
+  margin-bottom: 5rem; */
 
+
+  display: flex;
+  align-items: center;
+  border: 1px solid #ccc;
+  background-color: #ffffff;
+  width: 22rem;
+  box-shadow: 0 2px 70px 0 rgba(195, 192, 192, 0.5);
+  border-radius: 4px;
+  font-family: var(--main-font-family);
   margin-bottom: 5rem;
 }
 
 #input-container input[type="email"] {
-  border: none;
+  /* border: none;
   padding: 1.3rem;
   flex-grow: 1;
-  background-color: #ffffff;
+  background-color: #ffffff; */
 
   /* THERE's a blue border that appears here, look into it later  */
+
+  flex-grow: 1;
+  border: none;
+  padding: 1.5rem;
+  border-radius: 4px 0 0 4px;
 }
 
 #input-container button {
-  border: none;
+  /* border: none;
   background-color: transparent;
-  padding: 0.5em;
-  border: var(--red-border-test);
+  padding: 0.5em; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 3.5rem; /* Same as your image width */
+  height: 3.5rem; /* Make it a square so the border-radius will turn it into a circle */
+  padding: 0.5rem;
+  margin: 10px;
+  border: none;
+  background-color: var(--doncella-turquoise-color); /* Your blue color */
+  border-radius: 50%; /* Makes the button circular */
+  cursor: pointer; /* Changes the cursor to a pointer on hover */
+  transition: background-color 0.3s; /* Smooth transition for hover effect */
+  
 }
 
-#input-container button img {
-  width: 3.5rem; /* Adjust as needed */
+
+#input-container button:hover,
+#input-container button:focus {
+  background-color: var(--doncella-navy-color);
+}
+
+/* #input-container button img {
+  width: 3.5rem; /
+} */
+
+#input-container .arrow {
+  color: #ffffff;
+  font-size: 1.5rem; /* Adjust the size of the arrow as needed */
+  transition: transform 0.3s; /* Smooth transition for the arrow movement */
+}
+
+#input-container button:hover .arrow,
+#input-container button:focus .arrow {
+  transform: translateX(5px); /* Move the arrow to the right on hover/focus */
 }
 
 /* BANNER */
