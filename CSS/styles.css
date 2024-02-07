@@ -13,6 +13,18 @@ img {
   height: auto;
 }
 
+body {
+  overflow-x: hidden;
+}
+
+@media screen and (max-width: 1124px) { 
+  header {
+    padding-left: 40px; 
+    padding-right: 40px;
+  }
+
+}
+
 
 :root {
   --doncella-turquoise-color: #5fcfd5;
@@ -28,7 +40,6 @@ img {
 }
 
 
-
 /* WORKING FROM HERE */
 
 header {
@@ -40,7 +51,7 @@ header {
 .background-image-top {
    background-image: url(../assets/top-image-clean.png);
    background-size: cover;
-   background-position: center center; 
+   /* background-position: center center;  */
    background-repeat: no-repeat; 
    width: 100%; 
    height: 100%; 
@@ -58,33 +69,49 @@ header {
   padding: 1rem 0;
   min-width: 600px;
   max-width: 1200px;
-  /* border: var(--red-border-test); */
+}
+
+@media screen and (max-width: 1124px){
+  #logo-contact-container {
+    min-width: 600px;
+    max-width: 700px;
+  }
 }
 
 .hero h3 {
   font-family: Helvetica, var(--main-font-family);
   color: #00adbb;
-  font-size: 5rem;
+  /* font-size: 5rem; */
   letter-spacing: -0.6px;
   line-height: 68px;
   font-weight: 400;
   display: flex;
   text-align: left;
   margin-top: 15rem;
+
+  font-size: 80px;
+  letter-spacing: -0.6px;
+
 }
 
 .header-description {
-  
-  width: 600px;
+  opacity: 0.7;
+  font-family: Helvetica;
+  font-size: 18px;
+  color: #272727;
+  letter-spacing: 0;
+  line-height: 24px;
+  max-width: 515px;
 }
 
 .header-text {
   font-family: var(--main-font-family);
   font-size: 1.5rem;
+  /* font-size: 18px; */
 }
 
 .hero-description-email-container {
- 
+
   display: flex;
   flex-direction: column;
   gap: 2rem;
@@ -92,6 +119,22 @@ header {
   max-width: 1200px;
   margin: 0 auto;
 }
+
+
+
+
+/* STAYED HERE *************************************** */
+@media screen and (max-width: 1124px){
+ .hero-description-email-container {
+    border: var(--red-border-test);
+  }
+}
+
+header #logo-img {
+  max-width: 250px;
+}
+
+
 
 @media screen and (max-width: 720px) {
 
@@ -102,13 +145,15 @@ header {
   .contact-container button {
     font-size: 0.5rem;
     padding: 0.5rem;
+
   }
 
   #logo-img {
     margin-top: 2rem;
     margin-left: 1rem;
-    width: 250px;
-    height: auto; /* maintain aspect ratio */
+    max-width: 200px;
+
+    
     /* You can also use percentages, e.g., width: 100%; if you want it to be responsive */
   }
 
@@ -124,7 +169,7 @@ header {
 
   .background-image-top {
     background-position: center center;
-    height: 600px;
+    max-height: 600px;
   }
 
   .hero-description-email-container {
@@ -162,8 +207,8 @@ header {
   font-family: var(--main-font-family);
   font-size: 1rem;
   color: #ffffff;
-  letter-spacing: 0.2rem;
-  padding: 1.1rem;
+  /* letter-spacing: 0.2rem; */
+  padding: 1rem;
   border: none;
   font-weight: 500;
   border-radius: 0.5rem;
@@ -218,14 +263,11 @@ header {
 
 .countdown-banner {
   background-color: var(--main-color);
-  /* background-position: center;  */
-  max-width: 100%;
   display: flex;
   justify-content: center;
-  font-size: 2rem;
-  padding: 3rem 15rem;
-  
+  padding: 3rem;
 }
+
 
 .countdown-item {
   text-align: center;
@@ -243,6 +285,11 @@ header {
   text-transform: uppercase;
   display: block; /* Makes it go to the next line */
   color: #ffffff;
+}
+
+@media screen and (max-width: 1124px) { 
+
+  
 }
 
 @media screen and (max-width: 720px) {
@@ -380,8 +427,9 @@ header {
 
 .card__img {
   width: 100%;
-  height: auto;
+  /* height: auto; */
   display: block;
+
 }
 
 
@@ -429,59 +477,6 @@ header {
 .swiper-pagination-bullet-active {
   background-color: var(--doncella-turquoise-color);
 }
-
-/* ====================BREAKPOINTS==================== */
-
-/* for small devices */
-
-/* @media screen and (max-width: 320px){
-  .card__data{
-    padding: 1rem;
-  }
-
-} */
-
-/* for medium devices */
-/* @media screen and (min-width: 768px) {
-  .card__content{
-    margin-inline: 3rem;
-  }
-
-  .swiper-button-next,
-  .swiper-button-prev{
-    display: block;
-  }
-
-  .swiper-button-next{
-    right: 1rem;
-  }
-
-  .swiper-button-next{
-    right: 1rem;
-  }
-} */
-
-/* for large devices */
-
- /* @media screen and (min-width: 1120px) {
-  .card__container {
-    max-width: 1120px;
-  }
-
-  .card__content{
-    margin-inline: 5rem;
-  }
-
-  .swiper-button-next{
-    right: 1rem;
-  }
-
-  .swiper-button-next{
-    right: 1rem;
-  }
-}  */
-
-/* FORM */
 
 /* CONTACT FORM SECTION  */
 
@@ -605,7 +600,7 @@ input[type="radio"] {
   align-items: center;
   justify-content: space-evenly;
   width: 150px;
-  height: 40px;
+  max-height: 40px;
   background-color: #dde3e8;
   color: white;
   border: 1px solid #dde3e8;
@@ -617,6 +612,7 @@ input[type="radio"] {
   line-height: 40px;
   cursor: pointer;
   transition: background-color 0.3s ease;
+ 
 }
 
 input[type="radio"]:checked + label {
