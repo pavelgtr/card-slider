@@ -728,15 +728,38 @@ footer div {
   display: none;
 }
 
-/* Mobile styles */
+.mobile-bottom {
+  /* border: var(--red-border-test); */
+  /* display: block; */
+}
+
+@media screen and (width <= 1320px){
+  .footer-list .links {
+    
+    font-size: 14px;
+    flex-wrap: wrap;
+    min-width: 550px;
+    justify-content: left;
+    align-items: center;
+    margin-left: 100px;
+  }
+}
+
+
 @media screen and (max-width: 780px) {
   .footer-list #footer-logo {
-    display: inline;
+    
+    display: flex;
+    position: absolute;
+    
   }
+
+ 
 
   .footer-list #footer-logo-large {
     /* max-width: 300px; */
     display: none;
+    /* border: var(--red-border-test); */
   }
   .footer-social-media {
     min-width: 60vw;
