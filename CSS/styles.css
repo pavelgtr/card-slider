@@ -660,24 +660,13 @@ footer {
   flex-direction: column;
 }
 
-.footer-content {
-  /* display: flex; */
-  
-}
-
-footer div {
- 
-  /* padding: 0.5rem; */
- 
-}
-
 .footer-banner {
   background-color: #00adb5;
   width: 100%;
 }
 
 .footer-list {
- 
+  
   color: var(--doncella-white-color);
   display: flex;
   list-style: none;
@@ -686,6 +675,10 @@ footer div {
   padding-top: 2%;
 }
 
+/* For larger screens, only the large logo is visible */
+.footer-list #footer-logo-large {
+  display: block; /* Show the large logo */
+}
 
 /* HIDE secondary LOGO LARGE SCREEN  */
 .footer-list #footer-logo {
@@ -747,28 +740,37 @@ footer div {
 
 
 @media screen and (max-width: 780px) {
-  .footer-list #footer-logo {
-    
-    display: flex;
-    position: absolute;
-    
+
+  body, html {
+    overflow-x: hidden;
   }
 
+  .footer-list #footer-logo {
+    display: block; /* Show the mobile logo */
+  }
  
-
   .footer-list #footer-logo-large {
     /* max-width: 300px; */
     display: none;
     /* border: var(--red-border-test); */
   }
   .footer-social-media {
-    min-width: 60vw;
+
+    display: flex;
+    justify-content: center; /* This centers the flex items on the main axis */
+    align-items: center; /* This centers the flex items on the cross axis if needed */
+    width: 100%; /* You can set this to 100% to use the full width */
     margin-left: auto;
     margin-right: auto;
-  }
+    gap: 20px; /* Maintain the gap between items */
+    padding: 20px 0 20px 10px;
+   }
 
   .mobile-bottom {
+    justify-content: center;
+    align-items: center;
     display: flex;
+    width: 100%;
   }
 
   .hidden-copyright {
@@ -784,3 +786,4 @@ footer div {
   }
 
 }
+
