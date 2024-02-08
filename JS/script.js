@@ -34,7 +34,6 @@ let swiperCards = new Swiper(".card__content", {
       slidesPerView: 1,
       spaceBetween: 20 // You can adjust this value as needed
     },
-
     1145: {
       slidesPerView: 3,
       spaceBetween: 20,
