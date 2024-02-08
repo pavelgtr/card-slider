@@ -233,7 +233,7 @@ header #logo-img {
 
 
   .countdown-banner {
-    border: var(--red-border-test);
+    /* border: var(--red-border-test); */
   }
   .countdown-item {
     margin: 0 0.1rem;
