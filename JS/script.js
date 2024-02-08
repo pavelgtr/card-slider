@@ -42,10 +42,10 @@ let swiperCards = new Swiper(".card__content", {
 });
 
 // Button for registration redirection
-document.getElementById("submitArrow").addEventListener("click", function() {
-  window.location.href = "https://doncella.com.do/#contacto";
-  alert("clicked"); // Alert when the button is clicked
-});
+// document.getElementById("submitArrow").addEventListener("click", function() {
+//   window.location.href = "https://doncella.com.do/#contacto";
+//   alert("clicked"); // Alert when the button is clicked
+// });
 
 // Countdown Timer
 function updateCountdown() {

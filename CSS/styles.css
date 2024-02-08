@@ -161,8 +161,12 @@ header #logo-img {
   font-size: 1rem;
   letter-spacing: 0;
   line-height: 1.5rem;
-
+  display: flex;
+  align-items: center;
+  padding-right: 10px;
   margin-bottom: 5rem;
+  display: flex;
+
 }
 
 #input-container input[type="email"] {
@@ -170,28 +174,59 @@ header #logo-img {
   padding: 1.3rem;
   flex-grow: 1;
   background-color: #ffffff;
-
-  /* THERE's a blue border that appears here, look into it later  */
+  flex-grow: 1;
 }
 
-#input-container button {
+/* #input-container button {
   border: none;
   background-color: transparent;
   padding: 0.5em;
 }
 
 #input-container button img {
-  width: 100%; /* Make the image responsive within the button */
-  max-width: 3.5rem; /* Adjust the max width as necessary */
-  height: auto; /* Maintain aspect ratio */
-  /* border: var(--red-border-test); */
-}
+  width: 100%; 
+  max-width: 3.5rem; 
+  height: auto; 
+} */
 
 @media screen and (max-width: 480px) {
   #input-container {
     width: 100%;
   }
 }
+
+NEW BUTTON 
+
+a .submit-button-link, a {
+  text-decoration: none;
+}
+
+
+.submit-button {
+  background-color: #4CBAD8; /* The blue background color */
+  color: #FFFFFF; /* White color for the arrow */
+  width: 50px; /* Width as specified */
+  height: 50px; /* Height as specified */
+  border-radius: 50%; /* Make it round */
+  border: none; /* No border */
+  display: flex; /* Use flexbox to center content */
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
+  position: relative; /* Needed to position the arrow pseudo-element */
+  cursor: pointer; /* Change mouse cursor to pointer */
+  outline: none; /* Remove outline to match design */
+
+}
+
+.submit-button::before {
+  content: '→'; /* Unicode arrow */
+  font-size: 16px; /* Adjust the size of the arrow as needed */
+  line-height: 1; /* Adjust line height to control vertical alignment */
+  display: flex; /* Use flex to center the arrow */
+  align-items: center; /* Align the arrow vertically */
+  justify-content: center; /* Align the arrow horizontally */
+}
+
 
 /* <------------------------------------------ BANNER ------------------------------------------> */
 
