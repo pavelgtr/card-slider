@@ -22,8 +22,6 @@
 
 img {
   display: block;
-  /* max-width: 100%; */
-  /* height: auto; */
 }
 
 body {
@@ -143,7 +141,7 @@ header #logo-img {
   gap: 1rem;
 }
 
-/* <------------------------------------------ EMAIL INPUT TBD ------------------------------------------> */
+/* <------------------------------------------ EMAIL INPUT ------------------------------------------> */
 
 #input-container input {
   font-size: 1rem;
@@ -184,11 +182,12 @@ header #logo-img {
 
 #input-container button img {
   width: 100%; /* Make the image responsive within the button */
-  max-width: 2rem; /* Adjust the max width as necessary */
+  max-width: 3.5rem; /* Adjust the max width as necessary */
   height: auto; /* Maintain aspect ratio */
+  /* border: var(--red-border-test); */
 }
 
-@media screen and (width <= 480px) {
+@media screen and (max-width: 480px) {
   #input-container {
     width: 100%;
   }
