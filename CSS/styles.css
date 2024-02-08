@@ -183,12 +183,14 @@ header #logo-img {
 }
 
 #input-container button img {
-  width: 3.5rem; /* Adjust as needed */
+  width: 100%; /* Make the image responsive within the button */
+  max-width: 2rem; /* Adjust the max width as necessary */
+  height: auto; /* Maintain aspect ratio */
 }
 
 @media screen and (width <= 480px) {
   #input-container {
-    width: rem;
+    width: 100%;
   }
 }
 
