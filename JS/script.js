@@ -30,12 +30,12 @@ let swiperCards = new Swiper(".card__content", {
 
   breakpoints: {
     // Add your breakpoint
-    820: {
+    320: {
       slidesPerView: 1,
       spaceBetween: 20 // You can adjust this value as needed
     },
 
-    1000: {
+    1145: {
       slidesPerView: 3,
       spaceBetween: 20,
     },

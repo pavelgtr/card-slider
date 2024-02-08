@@ -276,7 +276,8 @@ header #logo-img {
   justify-content: center;
   align-items: center; */
   margin: 0 auto;
-  width: 1400px;
+  max-width: 1400px;
+ 
 }
 
 .card__container {
@@ -302,16 +303,34 @@ header #logo-img {
 
 .card__content {
   overflow: hidden;
-  margin-inline: 200px;          /* THIS FIXES THE ARROW INSIDE CARDS ISSUE */
+  margin-inline: 170px;          /* THIS FIXES THE ARROW INSIDE CARDS ISSUE */
 /* margin-inline: 10rem; THIS IS THE OLD SETTING  */
-  border: var(--red-border-test);
+
+  min-width: 900px;
 }
+
+@media screen and (width < 1145px) {
+  .card__content {
+  
+    max-width: 450px;
+    min-width: 300px;
+
+    margin: 0 auto; /* Center the content */
+  }
+}
+
+.card__container [class^="swiper-button-"]{
+  width: 10rem;
+}
+
+
 
 .card__article {
   width: 100%;
   /* overflow: hidden; */
   min-height: 600px;
   /* width: 300px; */
+  
 }
 
 .card__image {
@@ -325,7 +344,6 @@ header #logo-img {
   background-color: var(--doncella-grey-color);
   padding: 15px 15px;
   text-align: center;
-  
 }
 
 .card__img {
@@ -352,8 +370,8 @@ header #logo-img {
   font-weight: 400;
   width:255px;
   height: 115px;
-  margin-bottom: 0;
- 
+  /* margin-bottom: 0; */
+  margin: 0 auto;
   /* font-size: 1rem; */
 }
 
@@ -371,14 +389,15 @@ header #logo-img {
 .swiper-button-next,
 .swiper-button-prev {
   color: rgb(221, 220, 220);
-  position: absolute;
+  
 }
 
 .swiper-pagination-bullet-active {
   background-color: var(--doncella-turquoise-color);
 }
 
-/* CONTACT FORM SECTION  */
+
+/* <------------------------------------------ CONTACT FORM ------------------------------------------> */
 
 .bottom-background-image {
   background-image: url(../assets/bottom-wave.png);
