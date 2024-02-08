@@ -2,6 +2,7 @@
 let swiperCards = new Swiper(".card__content", {
   loop: false,
   slidesPerView: 3,
+  spaceBetween: 40,
   grabCursor: true,
   pagination: {
     el: ".swiper-pagination",
@@ -12,18 +13,31 @@ let swiperCards = new Swiper(".card__content", {
     nextEl: ".swiper-button-next",
     prevEl: ".swiper-button-prev",
   },
+  // breakpoints: {
+  //   320: {
+  //     slidesPerView: 1,
+  //     spaceBetween: 20,
+  //   },
+  //   820: {
+  //     slidesPerView: 2,
+  //     spaceBetween: 30,
+  //   },
+  //   1093: {
+  //     slidesPerView: 3,
+  //     spaceBetween: 40,
+  //   },
+  // },
+
   breakpoints: {
-    320: {
-      slidesPerView: 1,
-      spaceBetween: 20,
-    },
+    // Add your breakpoint
     820: {
-      slidesPerView: 2,
-      spaceBetween: 30,
+      slidesPerView: 1,
+      spaceBetween: 20 // You can adjust this value as needed
     },
-    1093: {
+
+    1000: {
       slidesPerView: 3,
-      spaceBetween: 40,
+      spaceBetween: 20,
     },
   },
 });

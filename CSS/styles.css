@@ -272,30 +272,23 @@ header #logo-img {
 /* <------------------------------------------ CARDS ------------------------------------------> */
 
 .container {
-  display: flex;
+  /* display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: center; */
   margin: 0 auto;
-    
+  width: 1400px;
 }
-
-
 
 .card__container {
-  max-width: 1300px;
-  min-width: 800px;
+  /* max-width: 1300px;
+  min-width: 800px; */
   /* width: clamp(50vw, 70vw, 100vw); */
   min-height: 700px;
-  /* border: var(--red-border-test); */
 }
 
-@media (width <= 480px) {
+/* @media (width <= 480px) {
   .card__container {
-    /* max-width: 300px;
-    min-width: 200px; */
-    /* width: clamp(50vw, 70vw, 100vw); */
     min-height: 700px;
-    /* border: var(--red-border-test); */
   }
 }
 
@@ -305,11 +298,13 @@ header #logo-img {
     min-width: 500px;
     min-height: 700px;
   }
-}
+} */
 
 .card__content {
   overflow: hidden;
-  margin-inline: 5rem;
+  margin-inline: 200px;          /* THIS FIXES THE ARROW INSIDE CARDS ISSUE */
+/* margin-inline: 10rem; THIS IS THE OLD SETTING  */
+  border: var(--red-border-test);
 }
 
 .card__article {
@@ -330,12 +325,7 @@ header #logo-img {
   background-color: var(--doncella-grey-color);
   padding: 15px 15px;
   text-align: center;
-}
-
-.swiper-wrapper .card__article:nth-child(3) .card__description {
-  font-size: 1rem;
-
-  margin: 0;
+  
 }
 
 .card__img {
@@ -360,8 +350,10 @@ header #logo-img {
 
 .card__description {
   font-weight: 400;
-  margin-bottom: 1.75rem;
-
+  width:255px;
+  height: 115px;
+  margin-bottom: 0;
+ 
   /* font-size: 1rem; */
 }
 
@@ -369,7 +361,7 @@ header #logo-img {
   display: inline-block;
   background-color: var(--doncella-turquoise-color);
   padding: 0.75rem 1.5rem;
-  margin: 0.75rem;
+  margin: 2.5rem;
   border-radius: 0.25rem;
   color: var(--doncella-white-color);
   text-decoration: none;
