@@ -1,0 +1,903 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;1,100;1,200;1,400&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@700&display=swap');
+
+:root {
+  --doncella-turquoise-color: #5fcfd5;
+  --doncella-grey-color: #fafafa;
+  --doncella-navy-color: #003d5c; /* Deep navy blue */
+  --doncella-coral-color: #ff6b6b; /* Soft coral */
+  --doncella-light-blue-color: #aed9e0;
+  --doncella-white-color: #ffffff;
+  --main-color: rgb(0, 173, 187);
+  --main-font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  --red-border-test: 2px solid red;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+img {
+  display: block;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+/* <------------------------------------------ HEADER ------------------------------------------> */
+
+header {
+  width: 100vw;
+  height: auto;
+  background-image: url(../assets/top-image-clean.png);
+  background-size: cover;
+  /* background-position: 0 0;
+  background-attachment: local; */
+  background-repeat: no-repeat;
+}
+
+@media screen and (width <= 900px) {
+  header {
+    background-position-x: -200px;
+  }
+}
+
+@media screen and (width <= 480px) {
+  header {
+    background-size: 270vw auto;
+    background-position: -140vw -20vh;
+  }
+
+  body,
+  html {
+    overflow-x: hidden;
+  }
+}
+
+.hero-description-email-container {
+}
+
+header {
+  padding: 3% 15% 0 15%;
+}
+
+/* top logo and contact button  */
+#logo-contact-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Doncella logo  */
+header #logo-img {
+  width: 50%;
+}
+
+.contact-container button {
+  background: var(--doncella-turquoise-color);
+  font-family: var(--main-font-family);
+  font-size: 0.7rem;
+  text-transform: uppercase;
+  color: #ffffff;
+  letter-spacing: 0.07rem;
+  padding: 0.8rem 1.2rem;
+  border: none;
+  font-weight: 500;
+}
+
+@media screen and (width <= 480px) {
+  .contact-container button {
+    display: none;
+  }
+
+  header #logo-img {
+    width: auto;
+    height: auto;
+    margin-top: 2rem;
+    margin-left: 15vw;
+    margin-right: auto;
+  }
+}
+
+.hero h3 {
+  font-family: 'Source Sans Pro', sans-serif;
+  font-weight: 700; /* Bold */  
+  color: #00adbb;
+  display: flex;
+  text-align: left;
+  margin-top: 12rem;
+  /* font-size: clamp(85px, 4vw, 100px); */
+  font-size: clamp(45px, 55px, 100px);
+  /* font-size: 55px; */
+  line-height: 60.5px;
+}
+
+.header-description {
+  opacity: 0.7;
+  font-family: Helvetica;
+  font-size: clamp(18px, 3vw, 20px);
+  color: #272727;
+  letter-spacing: 0;
+  line-height: 24px;
+  max-width: 515px;
+  font-family: var(--main-font-family);
+}
+
+@media screen and (width <= 900px) {
+  .hero h3 {
+    font-size: 60px;
+    letter-spacing: 1px;
+    line-height: 55px;
+    margin-top: 15rem;
+  }
+
+  .header-description {
+    opacity: 0.7;
+    font-size: 16px;
+    width: 400px;
+  }
+}
+
+@media screen and (width <= 480px) {
+  .hero h3 {
+    font-size: 39px;
+    letter-spacing: -0.3px;
+    line-height: 35px;
+    margin-top: 21rem;
+    
+  }
+
+  .header-description {
+    opacity: 0.7;
+    font-size: 16px;
+    color: #272727;
+    letter-spacing: 0;
+    line-height: 24px;
+    max-width: 300px;
+  }
+}
+
+.hero-description-email-container {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+/* <------------------------------------------ EMAIL INPUT ------------------------------------------> */
+
+#input-container input {
+  font-size: 1rem;
+  opacity: 0.6;
+}
+
+
+#input-container {
+  display: flex;
+  align-items: center;
+  border: 1px solid #ccc;
+  background-color: #ffffff;
+  box-shadow: 0 2px 70px 0 rgba(195, 192, 192, 0.5);
+  border-radius: 4px;
+  font-family: var(--main-font-family);
+  margin-bottom: 5rem;
+  padding-right: 10px; /* You might want to adjust this */
+  width: 100%; /* Full width by default */
+  max-width: 22rem; /* Maximum width */
+  position: relative;
+}
+
+#input-container input[type="email"] {
+  border: none;
+  padding: 1.3rem;
+  flex-grow: 1;
+  border-radius: 4px 0 0 4px; /* Rounded corners on the left side */
+}
+
+#input-container input[type="email"]:focus {
+  outline: none; 
+}
+
+#input-container:focus-within {
+  outline: 2px solid #c8cfd1; /* Your desired focus color */
+
+}
+
+@media screen and (max-width: 480px) {
+  #input-container {
+    width: 80%;
+  }
+
+}
+
+
+a .submit-button-link, a {
+  text-decoration: none;
+}
+
+
+.submit-button {
+  background-color: #4CBAD8; 
+  color: #FFFFFF; 
+  width: 50px; 
+  height: 50px; 
+  border-radius: 50%; 
+  border: none; 
+  /* display: flex;  */
+  display: -webkit-flex;
+  justify-content: center; 
+  align-items: center; 
+  cursor: pointer; 
+  outline: none; 
+  padding: 20px;
+  position: absolute;
+  right: 10px;
+}
+
+.submit-button::before {
+  content: '→'; 
+  font-size: 18px; 
+  line-height: 1; 
+}
+
+@media screen and (max-width: 480px) {
+  .submit-button {
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    right: 1rem;
+   
+  }
+  #input-container {
+    max-width: none; /* Remove max-width on smaller screens */
+    width: 100%; /* Adjust the width as needed, such as 100% for full width */
+    margin: 20px auto; /* Center the container */
+    
+  }
+}
+
+
+
+/* <------------------------------------------ BANNER ------------------------------------------> */
+
+.countdown-banner {
+  background-color: var(--main-color);
+  display: flex;
+  justify-content: center;
+  padding: 3rem;
+  
+}
+
+.countdown-item {
+  text-align: center;
+  margin: 0 4.5rem;
+}
+
+.countdown-number {
+  font-size: 3.5rem; /* Adjust size as needed */
+  font-weight: 500;
+  color: #ffffff;
+  font-family: var(--main-font-family);
+}
+
+.countdown-label {
+  font-size: 0.7rem;
+  text-align: center;
+  text-transform: uppercase;
+  display: block; /* Makes it go to the next line */
+  color: #ffffff;
+  font-family: var(--main-font-family);
+}
+
+@media screen and ( width <= 780px ){
+  .countdown-item {
+    margin: 0 1.5rem;
+  }
+  
+}
+@media screen and (width <= 480px) {
+
+
+  .countdown-banner {
+    /* border: var(--red-border-test); */
+  }
+  .countdown-item {
+    margin: 0 0.1rem;
+    
+  }
+  .countdown-number {
+    font-size: 32px;
+    color: #ffffff;
+    letter-spacing: 0;
+    text-align: center;
+    line-height: 24px;
+  }
+
+  .countdown-label {
+    font-size: 10px;
+    letter-spacing: 0.42px;
+    text-align: center;
+    line-height: 26px;
+  }
+
+  .countdown-item {
+    text-align: center;
+    margin: 0 1rem;
+  }
+}
+
+
+/* <------------------------------------------ SERVICES ------------------------------------------> */
+
+/* SERVICES HEADING  */
+
+.services-heading {
+  margin: 3rem auto;
+  text-align: center;
+  font-family: var(--main-font-family);
+ 
+}
+
+#Services-location {
+  color: var(--doncella-turquoise-color);
+  /* font-size: 2rem; */
+  
+  font-size: clamp(1.2rem, 0.5vw, 2rem);
+  font-weight: 400;
+}
+
+#Services-subtitle {
+  font-size: clamp(1.8rem, 0.5vw, 2rem);
+  font-weight: 400;
+}
+
+/* <------------------------------------------ CARDS ------------------------------------------> */
+
+.container {
+
+  margin: 0 auto;
+  max-width: 1400px;
+ 
+}
+
+.card__container {
+  min-height: 750px;
+
+}
+
+
+.card__content {
+  overflow: hidden;
+  margin-inline: 170px;          /* THIS FIXES THE ARROW INSIDE CARDS ISSUE */
+/* margin-inline: 10rem; THIS IS THE OLD SETTING  */
+  min-width: 900px;
+}
+
+@media screen and (width < 1145px) {
+  .card__content {
+    max-width: 350px;
+    min-width: 300px;
+ 
+    margin: 0 auto; /* Center the content */
+  }
+}
+
+@media (width <= 520px) {
+  .card__content {
+    /* max-width: 150px; */
+    min-width: 160px;
+ 
+    margin: 0 auto; /* Center the content */
+  }
+}
+
+.card__container [class^="swiper-button-"]{
+  /* width: 10rem; */
+  margin: 0 auto;
+}
+
+.card__container .swiper-pagination {
+  
+ 
+  /* bottom: -4px; */
+}
+
+.card__article {
+  width: 100%;
+  /* overflow: hidden; */
+  min-height: 600px;
+  /* width: 300px; */
+  
+}
+
+.card__image {
+  position: relative;
+  background-color: var(--doncella-turquoise-color);
+  margin-bottom: -0.75;
+  overflow: hidden; /* This will ensure the image stays within the bounds of the container */
+}
+
+.card__data {
+  background-color: var(--doncella-grey-color);
+  padding: 15px 15px;
+  text-align: center;
+}
+
+.card__img {
+  width: 100%;
+  /* height: auto; */
+  display: block;
+}
+
+.card__name {
+  font-size: 1.5rem;
+  font-weight: 300;
+  color: var(--doncella-turquoise-color);
+  margin-bottom: 0.35rem;
+}
+
+.card__subtitle {
+  font-weight: 500;
+  font-style: var(--doncella-navy-color);
+  font-size: 1rem;
+  margin-bottom: 0.65rem;
+}
+
+.card__description {
+  font-weight: 400;
+  width:255px;
+  height: 115px;
+  /* margin-bottom: 0; */
+  margin: 0 auto;
+  /* font-size: 1rem; */
+}
+
+.card__button {
+  display: inline-block;
+  background-color: var(--doncella-turquoise-color);
+  padding: 0.75rem 1.5rem;
+  margin: 2.5rem;
+  border-radius: 0.25rem;
+  color: var(--doncella-white-color);
+  text-decoration: none;
+  font-weight: 400;
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+  color: rgb(221, 220, 220);
+  
+}
+
+.swiper-pagination-bullet-active {
+  background-color: var(--doncella-turquoise-color);
+}
+
+
+/* <------------------------------------------ CONTACT FORM ------------------------------------------> */
+
+.bottom-background-image {
+  background-image: url(../assets/bottom-wave.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+h2 {
+  opacity: 0.7;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 18px;
+  color: #4ac3cd;
+  letter-spacing: 0;
+  text-align: center;
+  line-height: 24px;
+  margin-top: 5rem;
+  padding-top: 10rem;
+}
+
+@media (width <= 520px) {
+  h2 {
+    margin-top: 0.5rem;
+  }
+}
+
+.contact-form-subtitle {
+  font-family: AvenirNext-Medium;
+  font-size: 26px;
+  color: #4a4a4a;
+  letter-spacing: 0;
+  text-align: center;
+  line-height: 36px;
+}
+
+form {
+  max-width: 800px;
+  /* max-width: 40vw; */
+  margin: 0 auto;
+  /* border: 2px dotted #3aadbb; */
+}
+
+form .label-input-container {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.input-container {
+  border: 1px none #e0e7eb;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+
+  /* grid-auto-rows: minmax(100px, auto);  */
+  /* align-items: ; */
+  padding: 1.5rem;
+  margin-left: auto;
+  margin-right: auto;
+  gap: 2rem;
+}
+
+.label-input-container input {
+  /* width: 15vw; */
+  min-height: 45px;
+  border-radius: 4px;
+  border: 1px solid #e0e7eb;
+  /* color: #24BDC5; */
+  font-family: "OpenSans";
+
+  outline: none;
+  padding-left: 20px;
+}
+
+.label-input-container ::placeholder {
+  color: #9fa7ac;
+  padding: 1rem;
+  font-size: 1rem;
+}
+
+.message-container {
+  grid-column: 1 / -1; /* Span across all columns */
+  grid-row: span 2; /* Span across two rows */
+  border-radius: 4px;
+  /* color: #24BDC5; */
+  font-family: "OpenSans";
+  /* font-size: 18px; */
+ 
+}
+
+.message-container textarea {
+  /* width: 15vw; */
+  min-height: 200px;
+  outline: none;
+  border: 1px solid #e0e7eb;
+  padding: 20px;
+}
+
+.label-input-container label {
+  text-align: left;
+  color: #788a95;
+  font-family: "Avenir Next";
+  font-size: 1rem;
+}
+
+span {
+  text-align: left;
+  font-family: "Avenir Next";
+  color: #3aadbb;
+  font-size: 14px;
+}
+
+/* <------------------------------------------ SERVICES SELECT ------------------------------------------> */
+
+.radio-container {
+  /* display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  max-width: 800px;
+  min-width: 500px;
+  margin: 2rem auto;
+  border: var(--red-border-test);
+  gap: 35px; */
+
+  display: flex;
+  justify-content: center;
+  margin-top: 2rem;
+  gap: 35px;
+  flex-wrap: wrap;
+  min-width: 500px;
+  /* border: var(--red-border-test); */
+}
+
+@media screen and (max-width: 500px) {
+  .radio-container {
+    justify-content: left;
+}
+}
+
+input[type="radio"] {
+  display: none;
+}
+
+.radio-container label {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 164px;
+  max-height: 40px;
+  background-color: #DDE3E8;
+  color: var(--doncella-white-color);
+  border: 1px solid #dde3e8;
+  font-style: bold;
+  border-radius: 30px;
+  /* padding: 7px 16px; */
+  font-family: "Avenir Next", sans-serif;
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 40px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+input[type="radio"]:checked + label {
+  background-color: #5fcfd5;
+  color: var(--doncella-grey-color);
+  border-color: #5fcfd5;
+}
+
+label:hover {
+  background-color: #b3e0e9; /* Lighter shade for hover effect */
+}
+
+legend {
+  text-align: center;
+  color: #788a95;
+  font-family: "Avenir Next";
+  /* FOR SAFARI  */
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#submit-form-button {
+  display: block; /* Make the button a block element */
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 3rem;
+
+  /* Other styles remain unchanged */
+  --rem: 16;
+  outline: none;
+  border: 0;
+  background-color: #5fcfd5;
+  border-radius: 4px;
+  color: white;
+  cursor: pointer;
+  font-family: "Avenir Next";
+  font-weight: 500;
+  font-size: 18px;
+  width: 15rem;
+  height: 3rem;
+  text-transform: uppercase;
+  transition: all ease-in-out 0.2s;
+}
+
+.input-button {
+  padding-bottom: 100px;
+}
+
+
+@media screen and (max-width: 720px) {
+
+  .input-container
+  { /* Ensure the button container is also centered */
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* This will center the child elements */
+    gap: 2rem;
+  }
+
+  .label-input-container input,
+  .message-container textarea,
+  .radio-container,
+  legend,
+  .label-input-container label
+  {
+    width: 80vw; /* Adjust the width to fit smaller screens */
+    max-width: 400px; /* Prevents elements from becoming too wide on larger screens */
+    margin: 0 auto; /* Center these elements within their parent container */
+  }
+
+  .label-input-container, .message-container {
+    width: 100%; /* Ensure label and message container take full width of their parent */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+.label-input-container label  {
+    
+    text-align: left;
+  }
+
+  #submit-form-button {
+    /* Additional styles remain unchanged */
+  }
+
+  .input-container {
+    grid-template-columns: 1fr;
+  }
+
+  .label-input-container input {
+    width: 80vw;
+  }
+
+  .label-input-container label {
+    width: 80vw;
+  }
+
+  .message-container textarea {
+    width: 80vw;
+  }
+
+  .radio-container {
+    max-width: 400px;
+    padding: 1.5rem;
+    margin-left: auto;
+    margin-right: auto;
+    gap: 2rem;
+  }
+
+  legend {
+    /* text-align: left; */
+    color: #788a95;
+    font-family: "Avenir Next";
+    padding: 1.5rem;
+    margin-left: auto;
+
+    gap: 2rem;
+  }
+
+  #submit-form-button {
+    margin-left: auto;
+
+  }
+}
+
+
+/* <------------------------------------------ FOOTER ------------------------------------------> */
+
+ 
+footer {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer-banner {
+  background-color: #00adb5;
+  width: 100%;
+}
+
+.footer-list {
+  
+  color: var(--doncella-white-color);
+  display: flex;
+  list-style: none;
+  padding-left: 5%;
+  font-size: 14px;
+  padding-top: 2%;
+}
+
+/* For larger screens, only the large logo is visible */
+.footer-list #footer-logo-large {
+  display: block; /* Show the large logo */
+}
+
+/* HIDE secondary LOGO LARGE SCREEN  */
+.footer-list #footer-logo {
+  /* max-width: 300px; */
+  display: none;
+}
+
+.footer-list .links {
+  
+  color: var(--doncella-white-color);
+  display: flex;
+  justify-content: end;
+  align-items: end;
+  padding-right: 10%;
+  /* margin-left: 10rem; */
+  width: 100%;
+  gap: 1rem;
+}
+
+.footer-list a {
+  color: var(--doncella-white-color);
+}
+
+.footer-content {
+  padding-bottom: 4rem;
+  display: block;
+}
+
+.footer-social-media {
+  /* border: var(--red-border-test); */
+  display: flex;
+  justify-content: end;
+  gap: 15px;
+  width: 100%;
+  padding-right: 15%;
+  padding-top: 2%;
+}
+
+.hidden-copyright {
+  display: none;
+}
+
+.mobile-bottom {
+  /* border: var(--red-border-test); */
+  /* display: block; */
+}
+
+@media screen and (width <= 1320px){
+  .footer-list .links {
+    
+    font-size: 14px;
+    flex-wrap: wrap;
+    min-width: 550px;
+    justify-content: left;
+    align-items: center;
+    margin-left: 100px;
+  }
+}
+
+
+@media screen and (max-width: 780px) {
+
+  body, html {
+    overflow-x: hidden;
+  }
+
+  .footer-list #footer-logo {
+    display: block; /* Show the mobile logo */
+  }
+ 
+  .footer-list #footer-logo-large {
+    /* max-width: 300px; */
+    display: none;
+    /* border: var(--red-border-test); */
+  }
+  .footer-social-media {
+
+    display: flex;
+    justify-content: center; /* This centers the flex items on the main axis */
+    align-items: center; /* This centers the flex items on the cross axis if needed */
+    width: 100%; /* You can set this to 100% to use the full width */
+    margin-left: auto;
+    margin-right: auto;
+    gap: 20px; /* Maintain the gap between items */
+    padding: 20px 0 20px 10px;
+   }
+
+  .mobile-bottom {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    width: 100%;
+  }
+
+  .hidden-copyright {
+    display: flex;
+  }
+  .footer-list .links {
+    display: none;
+  }
+
+  .footer-social-media {
+    width: 60vw;
+    gap: 20px;
+  }
+
+}
+

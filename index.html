@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- SWIPER CSS  -->
+    <link rel="stylesheet" href="CSS/swiper-bundle.min.css">
+    <!-- CSS -->
+    <link rel="stylesheet" href="CSS/styles.css">
+
+    <title>Card Slider</title>
+</head>
+
+<body>
+
+    <header>
+        <div id="logo-contact-container">
+            <picture>
+                <source srcset="./assets/Logo_Doncella_mobile.png" media="(max-width: 480px)">
+                <img id="logo-img" src="./assets/Logo_Doncella.png" alt="Doncella Logo">
+            </picture>
+            <div class="contact-container">
+                <button>contáctanos</button>
+            </div>
+        </div>
+
+        <div class="hero-description-email-container">
+            <div class="hero">
+                <h3>YA CASI EN<br>PUNTA CANA</h3>
+            </div>
+            <!-- Launch announcement, descripton and email unput  -->
+            <div class="header-description">
+                <p class="header-text">¡Doncella ya casi llega a revolucionar la limpieza en Punta Cana! 🌴¿Estás listo
+                    para despedirte del desorden y darle la bienvenida a una casa y negocio radiante? </p><br>
+                <p class="header-text">Regístrate para enterarte.</p>
+            </div>
+
+            <!-- EMAIL INPUT  -->
+            <div id="input-container">
+                <input type="email" id="email" required placeholder="E-mail">
+                <a href="https://doncella.com.do/#contacto" class="submit-button" aria-label="Submit"></a>
+                </a>
+            </div>
+        </div>
+
+        <!-- BACKGROUND IMG -->
+        <div class="background-image-top"></div>
+
+    </header>
+
+    <!-- BANNER  -->
+    <div class="countdown-banner">
+        <div class="countdown-item">
+            <span class="countdown-number" id="days">00</span>
+            <span class="countdown-label">DIAS</span>
+        </div>
+        <div class="countdown-item">
+            <span class="countdown-number" id="hours">00</span>
+            <span class="countdown-label">HORAS</span>
+        </div>
+        <div class="countdown-item">
+            <span class="countdown-number" id="minutes">00</span>
+            <span class="countdown-label">MINUTOS</span>
+        </div>
+        <div class="countdown-item">
+            <span class="countdown-number" id="seconds">00</span>
+            <span class="countdown-label">SEGUNDOS</span>
+        </div>
+    </div>
+    <!-- SERVICES -->
+
+
+
+    <div class="services-heading">
+        <p id="Services-location">PUNTA CANA + BÁVARO</p>
+        <p id="Services-subtitle">Servicios</p>
+    </div>
+
+    <section class="container">
+        <div class="card__container swiper">
+            <div class="card__content">
+                <!-- check div below here if errors -->
+                <div class="swiper-wrapper">
+
+                    <article class="card__article swiper-slide">
+                        <div class="card__image">
+                            <img src="./assets/casa.png" alt="casa logo" class="card__img">
+                        </div>
+                        <div class="card__data">
+                            <h3 class="card__name">PARA TU CASA</h3>
+                            <h4 class="card__subtitle">Auxiliar</h4>
+                            <p class="card__description">¿No sabes si limpiar la casa o ponerla a la venta? Solicita una
+                                Limpieza Profunda,
+                                nuestro servicio más completo para limpieza del hogar.</p>
+                            <a href="https://doncella.com.do/servicios/limpieza_profunda" class="card__button">LEER
+                                MAS</a>
+                        </div>
+                    </article>
+
+                    <article class="card__article swiper-slide">
+                        <div class="card__image">
+                            <img src="./assets/negocio.png" alt="negocio logo" class="card__img">
+                        </div>
+                        <div class="card__data">
+                            <h3 class="card__name">PARA TU NEGOCIO</h3>
+                            <h4 class="card__subtitle">Conserjería</h4>
+                            <p class="card__description">¡Concéntrate en tu negocio! Solicita nuestro servicio de
+                                limpieza y conserjería para tu
+                                negocio y atención al personal en la oficina.</p>
+                            <a href="https://doncella.com.do/servicios/express" class="card__button">LEER MAS</a>
+                        </div>
+                    </article>
+
+                    <article class="card__article swiper-slide">
+                        <div class="card__image">
+                            <img src="./assets/360.png" alt="360 logo" class="card__img">
+                        </div>
+                        <div class="card__data">
+                            <h3 class="card__name">LIMPIEZA 360</h3>
+                            <h4 class="card__subtitle">Conserjería</h4>
+                            <p class="card__description">Nuestro servicio de lavado mecanizado de muebles, incluye un
+                                sistema de inyección y
+                                succión para la extracción de suciedades y la eliminación de manchas.</p>
+                            <a href="https://doncella.com.do/servicios/limpieza_360" class="card__button">LEER MAS</a>
+                        </div>
+                    </article>
+
+                    <article class="card__article swiper-slide">
+                        <div class="card__image">
+                            <img src="./assets/airbnb.png" alt="airbnb logo" class="card__img">
+
+                        </div>
+                        <div class="card__data">
+                            <h3 class="card__name">PARA TU CASA</h3>
+                            <h4 class="card__subtitle">Airbnb</h4>
+                            <p class="card__description">Te ayudamos a convertirte en un anfitrión de 5 estrellas.
+                                Solicita nuestro servicios
+                                para la limpieza, desinfección y administración de tu propiedad.</p>
+                            <a href="https://doncella.com.do/servicios/airbnb" class="card__button">LEER MAS</a>
+                        </div>
+                    </article>
+                </div>
+
+            </div>
+            <!-- If we need navigation buttons -->
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+
+            <!-- If we need pagination -->
+            <div class="swiper-pagination"></div>
+        </div>
+    </section>
+
+    <!-- CONTACT FORM  -->
+
+    <div class="bottom-background-image">
+        <h2>CONTÁCTANOS</h2>
+        <h3 class="contact-form-subtitle">Regístrate y te notificamos</h3>
+        <form action="example.com/path" method="post">
+            <div class="input-container">
+                <div class="label-input-container">
+                    <label for="first_name">First Name:<span>*</span></label>
+                    <input type="text" name="first_name" id="first_name" required>
+                </div>
+                <div class="label-input-container">
+                    <label for="last_name">Last Name:<span>*</span></label>
+                    <input type="text" name="last_name" id="last_name" required>
+                </div>
+                <div class="label-input-container">
+                    <label for="email_input">E-mail:<span>*</span></label>
+                    <input type="email" name="E-mail" id="email_input" required>
+                </div>
+                <div class="label-input-container">
+                    <label for="cel_input">Phone number<span>*</span></label>
+                    <input type="text" name="Phone" id="cel_input" required pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
+                        placeholder="123-456-7890">
+                </div>
+                <div class="label-input-container message-container">
+                    <label for="message">Message</label>
+                    <textarea name="message" id="message" required></textarea>
+                </div>
+            </div>
+        </form>
+        <legend>servicios<span>*</span></legend>
+        <div class="radio-container">
+            <div>
+                <input type="radio" id="residence" name="service_type" value="residence" checked>
+                <label for="residence">Auxiliar Doncella</label>
+            </div>
+            <div>
+                <input type="radio" id="home" name="service_type" value="home">
+                <label for="home">Limpieza 360</label>
+            </div>
+            <div>
+                <input type="radio" id="employment" name="service_type" value="employment">
+                <label for="employment">Conserjería Negocios</label>
+            </div>
+            <div>
+                <input type="radio" id="other" name="service_type" value="other">
+                <label for="other">Airbnb</label>
+            </div>
+        </div>
+        <div class="input-button"><button type="submit" id="submit-form-button">Envia</button></div>
+    </div>
+
+
+
+
+    <!-- FOOTER -->
+
+    <footer>
+        <div class="footer-banner">
+
+            <div class="footer-content">
+                <div class="footer-social-media">
+                    <a href="https://www.youtube.com/channel/UCLu8H0Y9CTkDJwB9FVwXPTw"><img
+                            src="./assets/Phone-logo.png" alt="Phone"></a>
+                    <a href="https://www.facebook.com/doncella.do"><img src="./assets/facebook-logo.png"
+                            alt="Facebook"></a>
+                    <a href="https://twitter.com/DoncellaRD"><img src="./assets/twitter-logo.png" alt="Twitter"></a>
+                    <a href="https://www.pinterest.com/doncellard/"><img src="./assets/pinterest-logo.png"
+                            alt="Pinterest"></a>
+                    <a href="https://www.instagram.com/doncellard/"><img src="./assets/instagram-logo.png"
+                            alt="Instagram"></a>
+                </div>
+                <div>
+                    <ul class="footer-list">
+                        <li class="mobile-bottom">
+                            <img src=".//assets/bottom-logo -copy.png" alt="Logo" id="footer-logo">
+                            <img src=".//assets/Doncella-logo-bottom.png" alt="Logo" id="footer-logo-large">
+                        </li>
+                        <li class="links">
+                            &copy; Doncella SRL 2024 |
+                            <a href="https://doncella.com.do/">Santo Domingo</a> |
+                            <a href="https://doncella.com.do/">Santiago</a> |
+                            <a href="#">Punta Cana</a> |
+                            <a href="tel:809-638-6572">809-638-6572</a> |
+                            <a href="https://doncella.com.do/#nosotros">Políticas de Privacidad</a> |
+                            <a href="https://doncella.com.do/#nosotros">Site Map</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- SWIPER JS -->
+    <script src="JS/swiper-bundle.min.js"></script>
+
+    <!-- MAIN JS -->
+    <script src="JS/script.js"></script>
+</body>
+
+</html>
