@@ -36,8 +36,6 @@ header {
   height: auto;
   background-image: url(../assets/top-image-clean.png);
   background-size: cover;
-  /* background-position: 0 0;
-  background-attachment: local; */
   background-repeat: no-repeat;
 }
 
@@ -111,9 +109,7 @@ header #logo-img {
   display: flex;
   text-align: left;
   margin-top: 12rem;
-  /* font-size: clamp(85px, 4vw, 100px); */
   font-size: clamp(45px, 55px, 100px);
-  /* font-size: 55px; */
   line-height: 60.5px;
 }
 
@@ -185,9 +181,9 @@ header #logo-img {
   border-radius: 4px;
   font-family: var(--main-font-family);
   margin-bottom: 5rem;
-  padding-right: 10px; /* You might want to adjust this */
-  width: 100%; /* Full width by default */
-  max-width: 22rem; /* Maximum width */
+  padding-right: 10px; 
+  width: 100%; 
+  max-width: 22rem; 
   position: relative;
 }
 
@@ -195,7 +191,7 @@ header #logo-img {
   border: none;
   padding: 1.3rem;
   flex-grow: 1;
-  border-radius: 4px 0 0 4px; /* Rounded corners on the left side */
+  border-radius: 4px 0 0 4px; 
 }
 
 #input-container input[type="email"]:focus {
@@ -203,7 +199,7 @@ header #logo-img {
 }
 
 #input-container:focus-within {
-  outline: 2px solid #c8cfd1; /* Your desired focus color */
+  outline: 2px solid #c8cfd1; 
 
 }
 
@@ -227,7 +223,6 @@ a .submit-button-link, a {
   height: 50px; 
   border-radius: 50%; 
   border: none; 
-  /* display: flex;  */
   display: -webkit-flex;
   justify-content: center; 
   align-items: center; 
@@ -254,13 +249,10 @@ a .submit-button-link, a {
   }
   #input-container {
     max-width: none; /* Remove max-width on smaller screens */
-    width: 100%; /* Adjust the width as needed, such as 100% for full width */
+    width: 100%; 
     margin: 20px auto; /* Center the container */
-    
   }
 }
-
-
 
 /* <------------------------------------------ BANNER ------------------------------------------> */
 
@@ -269,7 +261,6 @@ a .submit-button-link, a {
   display: flex;
   justify-content: center;
   padding: 3rem;
-  
 }
 
 .countdown-item {
@@ -278,7 +269,7 @@ a .submit-button-link, a {
 }
 
 .countdown-number {
-  font-size: 3.5rem; /* Adjust size as needed */
+  font-size: 3.5rem; 
   font-weight: 500;
   color: #ffffff;
   font-family: var(--main-font-family);
@@ -288,7 +279,7 @@ a .submit-button-link, a {
   font-size: 0.7rem;
   text-align: center;
   text-transform: uppercase;
-  display: block; /* Makes it go to the next line */
+  display: block; 
   color: #ffffff;
   font-family: var(--main-font-family);
 }
@@ -303,7 +294,7 @@ a .submit-button-link, a {
 
 
   .countdown-banner {
-    /* border: var(--red-border-test); */
+
   }
   .countdown-item {
     margin: 0 0.1rem;
@@ -333,8 +324,6 @@ a .submit-button-link, a {
 
 /* <------------------------------------------ SERVICES ------------------------------------------> */
 
-/* SERVICES HEADING  */
-
 .services-heading {
   margin: 3rem auto;
   text-align: center;
@@ -358,22 +347,17 @@ a .submit-button-link, a {
 /* <------------------------------------------ CARDS ------------------------------------------> */
 
 .container {
-
   margin: 0 auto;
   max-width: 1400px;
- 
 }
 
 .card__container {
   min-height: 750px;
-
 }
-
 
 .card__content {
   overflow: hidden;
   margin-inline: 170px;          /* THIS FIXES THE ARROW INSIDE CARDS ISSUE */
-/* margin-inline: 10rem; THIS IS THE OLD SETTING  */
   min-width: 900px;
 }
 
@@ -381,44 +365,35 @@ a .submit-button-link, a {
   .card__content {
     max-width: 350px;
     min-width: 300px;
- 
-    margin: 0 auto; /* Center the content */
+    margin: 0 auto; 
   }
 }
 
 @media (width <= 520px) {
   .card__content {
-    /* max-width: 150px; */
     min-width: 160px;
- 
-    margin: 0 auto; /* Center the content */
+    margin: 0 auto; 
   }
 }
 
 .card__container [class^="swiper-button-"]{
-  /* width: 10rem; */
   margin: 0 auto;
 }
 
 .card__container .swiper-pagination {
-  
- 
-  /* bottom: -4px; */
+
 }
 
 .card__article {
   width: 100%;
-  /* overflow: hidden; */
   min-height: 600px;
-  /* width: 300px; */
-  
 }
 
 .card__image {
   position: relative;
   background-color: var(--doncella-turquoise-color);
   margin-bottom: -0.75;
-  overflow: hidden; /* This will ensure the image stays within the bounds of the container */
+  overflow: hidden; 
 }
 
 .card__data {
@@ -429,7 +404,6 @@ a .submit-button-link, a {
 
 .card__img {
   width: 100%;
-  /* height: auto; */
   display: block;
 }
 
@@ -451,9 +425,7 @@ a .submit-button-link, a {
   font-weight: 400;
   width:255px;
   height: 115px;
-  /* margin-bottom: 0; */
   margin: 0 auto;
-  /* font-size: 1rem; */
 }
 
 .card__button {
@@ -470,7 +442,6 @@ a .submit-button-link, a {
 .swiper-button-next,
 .swiper-button-prev {
   color: rgb(221, 220, 220);
-  
 }
 
 .swiper-pagination-bullet-active {
@@ -515,9 +486,7 @@ h2 {
 
 form {
   max-width: 800px;
-  /* max-width: 40vw; */
   margin: 0 auto;
-  /* border: 2px dotted #3aadbb; */
 }
 
 form .label-input-container {
@@ -530,9 +499,6 @@ form .label-input-container {
   border: 1px none #e0e7eb;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-
-  /* grid-auto-rows: minmax(100px, auto);  */
-  /* align-items: ; */
   padding: 1.5rem;
   margin-left: auto;
   margin-right: auto;
@@ -540,11 +506,9 @@ form .label-input-container {
 }
 
 .label-input-container input {
-  /* width: 15vw; */
   min-height: 45px;
   border-radius: 4px;
   border: 1px solid #e0e7eb;
-  /* color: #24BDC5; */
   font-family: "OpenSans";
 
   outline: none;
@@ -558,17 +522,13 @@ form .label-input-container {
 }
 
 .message-container {
-  grid-column: 1 / -1; /* Span across all columns */
-  grid-row: span 2; /* Span across two rows */
+  grid-column: 1 / -1; 
+  grid-row: span 2; 
   border-radius: 4px;
-  /* color: #24BDC5; */
   font-family: "OpenSans";
-  /* font-size: 18px; */
- 
 }
 
 .message-container textarea {
-  /* width: 15vw; */
   min-height: 200px;
   outline: none;
   border: 1px solid #e0e7eb;
@@ -592,23 +552,12 @@ span {
 /* <------------------------------------------ SERVICES SELECT ------------------------------------------> */
 
 .radio-container {
-  /* display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-wrap: wrap;
-  max-width: 800px;
-  min-width: 500px;
-  margin: 2rem auto;
-  border: var(--red-border-test);
-  gap: 35px; */
-
   display: flex;
   justify-content: center;
   margin-top: 2rem;
   gap: 35px;
   flex-wrap: wrap;
   min-width: 500px;
-  /* border: var(--red-border-test); */
 }
 
 @media screen and (max-width: 500px) {
@@ -632,7 +581,6 @@ input[type="radio"] {
   border: 1px solid #dde3e8;
   font-style: bold;
   border-radius: 30px;
-  /* padding: 7px 16px; */
   font-family: "Avenir Next", sans-serif;
   font-size: 14px;
   font-weight: 300;
@@ -648,7 +596,7 @@ input[type="radio"]:checked + label {
 }
 
 label:hover {
-  background-color: #b3e0e9; /* Lighter shade for hover effect */
+  background-color: #b3e0e9; 
 }
 
 legend {
@@ -661,12 +609,10 @@ legend {
 }
 
 #submit-form-button {
-  display: block; /* Make the button a block element */
+  display: block; 
   margin-left: auto;
   margin-right: auto;
   margin-top: 3rem;
-
-  /* Other styles remain unchanged */
   --rem: 16;
   outline: none;
   border: 0;
@@ -722,7 +668,6 @@ legend {
   }
 
   #submit-form-button {
-    /* Additional styles remain unchanged */
   }
 
   .input-container {
@@ -750,7 +695,6 @@ legend {
   }
 
   legend {
-    /* text-align: left; */
     color: #788a95;
     font-family: "Avenir Next";
     padding: 1.5rem;
@@ -796,7 +740,6 @@ footer {
 
 /* HIDE secondary LOGO LARGE SCREEN  */
 .footer-list #footer-logo {
-  /* max-width: 300px; */
   display: none;
 }
 
@@ -807,7 +750,6 @@ footer {
   justify-content: end;
   align-items: end;
   padding-right: 10%;
-  /* margin-left: 10rem; */
   width: 100%;
   gap: 1rem;
 }
@@ -822,7 +764,6 @@ footer {
 }
 
 .footer-social-media {
-  /* border: var(--red-border-test); */
   display: flex;
   justify-content: end;
   gap: 15px;
@@ -836,8 +777,7 @@ footer {
 }
 
 .mobile-bottom {
-  /* border: var(--red-border-test); */
-  /* display: block; */
+
 }
 
 @media screen and (width <= 1320px){
@@ -864,19 +804,17 @@ footer {
   }
  
   .footer-list #footer-logo-large {
-    /* max-width: 300px; */
     display: none;
-    /* border: var(--red-border-test); */
   }
   .footer-social-media {
 
     display: flex;
-    justify-content: center; /* This centers the flex items on the main axis */
-    align-items: center; /* This centers the flex items on the cross axis if needed */
-    width: 100%; /* You can set this to 100% to use the full width */
+    justify-content: center; 
+    align-items: center;
+    width: 100%; 
     margin-left: auto;
     margin-right: auto;
-    gap: 20px; /* Maintain the gap between items */
+    gap: 20px; 
     padding: 20px 0 20px 10px;
    }
 

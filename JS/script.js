@@ -1,4 +1,4 @@
-// Initialize Swiper for card content
+
 let swiperCards = new Swiper(".card__content", {
   loop: false,
   slidesPerView: 3,
@@ -13,26 +13,10 @@ let swiperCards = new Swiper(".card__content", {
     nextEl: ".swiper-button-next",
     prevEl: ".swiper-button-prev",
   },
-  // breakpoints: {
-  //   320: {
-  //     slidesPerView: 1,
-  //     spaceBetween: 20,
-  //   },
-  //   820: {
-  //     slidesPerView: 2,
-  //     spaceBetween: 30,
-  //   },
-  //   1093: {
-  //     slidesPerView: 3,
-  //     spaceBetween: 40,
-  //   },
-  // },
-
   breakpoints: {
-    // Add your breakpoint
     320: {
       slidesPerView: 1,
-      spaceBetween: 20 // You can adjust this value as needed
+      spaceBetween: 20 
     },
     1145: {
       slidesPerView: 3,
