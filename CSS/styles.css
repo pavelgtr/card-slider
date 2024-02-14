@@ -554,7 +554,7 @@ span {
 .radio-container {
   display: flex;
   justify-content: center;
-  margin-top: 2rem;
+  margin-top: 1rem;
   gap: 35px;
   flex-wrap: wrap;
   min-width: 500px;
@@ -576,8 +576,31 @@ input[type="radio"] {
   justify-content: space-evenly;
   width: 164px;
   max-height: 40px;
+  background-color: #e4eaef;
+  color: #7f7d7d;  
+  border: 1px solid #dde3e8;
+  font-style: bold;
+  border-radius: 30px;
+  font-family: "Avenir Next", sans-serif;
+  font-size: 14px;
+  font-weight: bold;
+  font-weight: 300;
+  line-height: 40px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  text-shadow: 0.1px 0.1px 0px #fff; /* Text shadow for depth, can be adjusted as needed */
+}
+
+/* OLD CODE  */
+
+/* .radio-container label {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 164px;
+  max-height: 40px;
   background-color: #DDE3E8;
-  color: var(--doncella-white-color);
+  color: #ffffff;  
   border: 1px solid #dde3e8;
   font-style: bold;
   border-radius: 30px;
@@ -587,7 +610,7 @@ input[type="radio"] {
   line-height: 40px;
   cursor: pointer;
   transition: background-color 0.3s ease;
-}
+} */
 
 input[type="radio"]:checked + label {
   background-color: #5fcfd5;
@@ -600,13 +623,17 @@ label:hover {
 }
 
 legend {
-  text-align: center;
+  text-align: left;
   color: #788a95;
   font-family: "Avenir Next";
+  /* border: var(--red-border-test); */
+  max-width: 750px;
   /* FOR SAFARI  */
   margin-left: auto;
   margin-right: auto;
 }
+
+
 
 #submit-form-button {
   display: block; 
@@ -647,7 +674,7 @@ legend {
   .label-input-container input,
   .message-container textarea,
   .radio-container,
-  legend,
+ 
   .label-input-container label
   {
     width: 80vw; /* Adjust the width to fit smaller screens */
@@ -688,7 +715,7 @@ legend {
 
   .radio-container {
     max-width: 400px;
-    padding: 1.5rem;
+   padding: 0 1rem;
     margin-left: auto;
     margin-right: auto;
     gap: 2rem;
