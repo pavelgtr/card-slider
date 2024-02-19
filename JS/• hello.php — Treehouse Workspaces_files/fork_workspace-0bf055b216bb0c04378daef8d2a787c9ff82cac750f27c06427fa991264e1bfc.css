@@ -1,0 +1,5 @@
+#treehouse-workspace .util-actions #fork-tab { display: inline-block; height: 32px; width: 40px; padding: 0; margin: 0; z-index: 100; cursor: pointer; }
+
+#treehouse-workspace .util-actions #fork-tab .th-icon-fork { display: block; width: 14px; height: 17px; overflow: hidden; background: url(/assets/icons/icon-workspace-fork-editor-1a4d66ca32c04d601dcd0855c9dd2af62f5657fcafded650240dd0d46fe11d00.svg) no-repeat 0 0; position: relative; top: 8px; margin: 0 auto; }
+
+#treehouse-workspace .util-actions #fork-tab:hover .th-icon-fork { background-position: -14px 0; }

@@ -1,5 +1,11 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;1,100;1,200;1,400&display=swap");
-@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@700&display=swap');
+/* @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;1,100;1,200;1,400&display=swap"); */
+@import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@700&display=swap");
+/* Lato-Regular: */
+@import url("https://fonts.googleapis.com/css2?family=Lato&display=swap");
+/* Montserrat-Regular: */
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+/* Nunito-Regular: */
+@import url("https://fonts.googleapis.com/css2?family=Nunito&display=swap");
 
 :root {
   --doncella-turquoise-color: #5fcfd5;
@@ -9,8 +15,9 @@
   --doncella-light-blue-color: #aed9e0;
   --doncella-white-color: #ffffff;
   --main-color: rgb(0, 173, 187);
-  --main-font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
-    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  --main-font-family: "Source Sans Pro", -apple-system, BlinkMacSystemFont,
+    "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
+    sans-serif;
   --red-border-test: 2px solid red;
 }
 
@@ -34,7 +41,8 @@ body {
 header {
   width: 100vw;
   height: auto;
-  background-image: url(../assets/top-image-clean.png);
+  /* background-image: url(../assets/top-image-clean.png); */
+  background-image: url(../assets/Darker_Background_Top.png);
   background-size: cover;
   background-repeat: no-repeat;
 }
@@ -57,9 +65,6 @@ header {
   }
 }
 
-.hero-description-email-container {
-}
-
 header {
   padding: 3% 15% 0 15%;
 }
@@ -79,7 +84,8 @@ header #logo-img {
 .contact-container button {
   background: var(--doncella-turquoise-color);
   font-family: var(--main-font-family);
-  font-size: 0.7rem;
+  /* font-size: 0.7rem; */
+  font-size: 14px;
   text-transform: uppercase;
   color: #ffffff;
   letter-spacing: 0.07rem;
@@ -103,12 +109,13 @@ header #logo-img {
 }
 
 .hero h3 {
-  font-family: 'Source Sans Pro', sans-serif;
-  font-weight: 700; /* Bold */  
+  font-family: "Source Sans Pro", sans-serif;
+  font-weight: 700; /* Bold */
   color: #00adbb;
   display: flex;
   text-align: left;
   margin-top: 12rem;
+  /* LOOK AT THIS FONT SIZE **************************** *****************************/
   font-size: clamp(45px, 55px, 100px);
   line-height: 60.5px;
 }
@@ -116,7 +123,8 @@ header #logo-img {
 .header-description {
   opacity: 0.7;
   font-family: Helvetica;
-  font-size: clamp(18px, 3vw, 20px);
+  font-size: clamp(18px, 3vw, 18px);
+  /* font-size: 18px; */
   color: #272727;
   letter-spacing: 0;
   line-height: 24px;
@@ -145,7 +153,6 @@ header #logo-img {
     letter-spacing: -0.3px;
     line-height: 35px;
     margin-top: 21rem;
-    
   }
 
   .header-description {
@@ -167,10 +174,10 @@ header #logo-img {
 /* <------------------------------------------ EMAIL INPUT ------------------------------------------> */
 
 #input-container input {
-  font-size: 1rem;
+  /* font-size: 1rem; */
+  font-size: 0.8rem;
   opacity: 0.6;
 }
-
 
 #input-container {
   display: flex;
@@ -181,62 +188,65 @@ header #logo-img {
   border-radius: 4px;
   font-family: var(--main-font-family);
   margin-bottom: 5rem;
-  padding-right: 10px; 
-  width: 100%; 
-  max-width: 22rem; 
+  padding-right: 10px;
+  width: 100%;
+  max-width: 22rem;
   position: relative;
 }
+
+/* font-family: .AppleSystemUIFont;
+font-size: 14px;
+color: #A9BBC9;
+letter-spacing: 0;
+line-height: 26px; */
 
 #input-container input[type="email"] {
   border: none;
   padding: 1.3rem;
   flex-grow: 1;
-  border-radius: 4px 0 0 4px; 
+  border-radius: 4px 0 0 4px;
 }
 
 #input-container input[type="email"]:focus {
-  outline: none; 
+  outline: none;
 }
 
 #input-container:focus-within {
-  outline: 2px solid #c8cfd1; 
-
+  outline: 2px solid #c8cfd1;
 }
 
 @media screen and (max-width: 480px) {
   #input-container {
     width: 80%;
   }
-
 }
 
-
-a .submit-button-link, a {
+a .submit-button-link,
+a {
   text-decoration: none;
 }
 
-
 .submit-button {
-  background-color: #4CBAD8; 
-  color: #FFFFFF; 
-  width: 50px; 
-  height: 50px; 
-  border-radius: 50%; 
-  border: none; 
+  background-color: #4cbad8;
+  color: #ffffff;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: none;
   display: -webkit-flex;
-  justify-content: center; 
-  align-items: center; 
-  cursor: pointer; 
-  outline: none; 
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  outline: none;
   padding: 20px;
   position: absolute;
   right: 10px;
 }
 
 .submit-button::before {
-  content: '→'; 
-  font-size: 18px; 
-  line-height: 1; 
+  content: "→";
+  font-size: 18px;
+  line-height: 1;
 }
 
 @media screen and (max-width: 480px) {
@@ -245,11 +255,10 @@ a .submit-button-link, a {
     height: 40px;
     position: absolute;
     right: 1rem;
-   
   }
   #input-container {
     max-width: none; /* Remove max-width on smaller screens */
-    width: 100%; 
+    width: 100%;
     margin: 20px auto; /* Center the container */
   }
 }
@@ -257,48 +266,46 @@ a .submit-button-link, a {
 /* <------------------------------------------ BANNER ------------------------------------------> */
 
 .countdown-banner {
-  background-color: var(--main-color);
+  background-color: var(--doncella-turquoise-color);
   display: flex;
   justify-content: center;
   padding: 3rem;
 }
 
-.countdown-item {
+.countdown-number {
+  /* font-size: 3.5rem;  */
+  /* font-weight: 500; */
+  color: #ffffff;
+  font-family: "SourceSansPro-Seminbold";
+  font-size: 66px;
+  letter-spacing: 0;
   text-align: center;
-  margin: 0 4.5rem;
 }
 
-.countdown-number {
-  font-size: 3.5rem; 
-  font-weight: 500;
-  color: #ffffff;
-  font-family: var(--main-font-family);
+.countdown-item {
+  text-align: center;
+  margin: 0 3rem;
+  font-size: 14px;
 }
 
 .countdown-label {
-  font-size: 0.7rem;
+  /* font-size: 0.7rem; */
+  font-family: "SourceSansPro-Seminbold";
+  font-size: 14px;
   text-align: center;
   text-transform: uppercase;
-  display: block; 
+  display: block;
   color: #ffffff;
-  font-family: var(--main-font-family);
 }
 
-@media screen and ( width <= 780px ){
+@media screen and (width <= 780px) {
   .countdown-item {
     margin: 0 1.5rem;
   }
-  
 }
 @media screen and (width <= 480px) {
-
-
-  .countdown-banner {
-
-  }
   .countdown-item {
     margin: 0 0.1rem;
-    
   }
   .countdown-number {
     font-size: 32px;
@@ -321,27 +328,35 @@ a .submit-button-link, a {
   }
 }
 
-
 /* <------------------------------------------ SERVICES ------------------------------------------> */
 
 .services-heading {
   margin: 3rem auto;
   text-align: center;
   font-family: var(--main-font-family);
- 
 }
 
 #Services-location {
-  color: var(--doncella-turquoise-color);
-  /* font-size: 2rem; */
-  
-  font-size: clamp(1.2rem, 0.5vw, 2rem);
+  color: #4ac3cd;
+  opacity: 0.7;
+
+  font-size: 21px;
+  letter-spacing: 0;
+  text-align: center;
+  line-height: 24px;
+  font-size: clamp(21px, 0.5vw, 21px);
   font-weight: 400;
 }
 
 #Services-subtitle {
-  font-size: clamp(1.8rem, 0.5vw, 2rem);
+  /* font-size: clamp(1.8rem, 0.5vw, 2rem); */
   font-weight: 400;
+  font-family: "SourceSansPro-Semibold";
+  font-size: 36px;
+  color: #4a4a4a;
+  letter-spacing: 0;
+  text-align: center;
+  line-height: 36px;
 }
 
 /* <------------------------------------------ CARDS ------------------------------------------> */
@@ -357,7 +372,7 @@ a .submit-button-link, a {
 
 .card__content {
   overflow: hidden;
-  margin-inline: 170px;          /* THIS FIXES THE ARROW INSIDE CARDS ISSUE */
+  margin-inline: 170px; /* THIS FIXES THE ARROW INSIDE CARDS ISSUE */
   min-width: 900px;
 }
 
@@ -365,23 +380,22 @@ a .submit-button-link, a {
   .card__content {
     max-width: 350px;
     min-width: 300px;
-    margin: 0 auto; 
+    margin: 0 auto;
   }
 }
 
 @media (width <= 520px) {
   .card__content {
     min-width: 160px;
-    margin: 0 auto; 
+    margin: 0 auto;
   }
 }
 
-.card__container [class^="swiper-button-"]{
+.card__container [class^="swiper-button-"] {
   margin: 0 auto;
 }
 
 .card__container .swiper-pagination {
-
 }
 
 .card__article {
@@ -393,7 +407,7 @@ a .submit-button-link, a {
   position: relative;
   background-color: var(--doncella-turquoise-color);
   margin-bottom: -0.75;
-  overflow: hidden; 
+  overflow: hidden;
 }
 
 .card__data {
@@ -408,24 +422,42 @@ a .submit-button-link, a {
 }
 
 .card__name {
-  font-size: 1.5rem;
+  font-size: 16px;
   font-weight: 300;
-  color: var(--doncella-turquoise-color);
+  color: #00adbb;
   margin-bottom: 0.35rem;
+  opacity: 0.7;
+  font-family: "SourceSansPro-Regular";
+  letter-spacing: 2px;
+  text-align: center;
+  line-height: 24px;
 }
 
 .card__subtitle {
   font-weight: 500;
-  font-style: var(--doncella-navy-color);
-  font-size: 1rem;
+  /* font-style: var(--doncella-navy-color); */
+  /* font-size: 1rem; */
   margin-bottom: 0.65rem;
+  color: #4a4a4a;
+  font-family: "SourceSansPro-Semibold";
+  font-size: 24px;
+  letter-spacing: 0;
+  text-align: center;
+  /* line-height: 45px; */
 }
 
 .card__description {
   font-weight: 400;
-  width:255px;
+  width: 255px;
   height: 115px;
   margin: 0 auto;
+  opacity: 0.7;
+  font-family: Helvetica;
+  font-size: 18px;
+  color: #272727;
+  letter-spacing: 0;
+  text-align: center;
+  line-height: 24px;
 }
 
 .card__button {
@@ -448,11 +480,10 @@ a .submit-button-link, a {
   background-color: var(--doncella-turquoise-color);
 }
 
-
 /* <------------------------------------------ CONTACT FORM ------------------------------------------> */
 
 .bottom-background-image {
-  background-image: url(../assets/bottom-wave.png);
+  background-image: url(../assets/Darker_Background_Bottom.png);
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -506,24 +537,25 @@ form .label-input-container {
 }
 
 .label-input-container input {
-  min-height: 45px;
+  min-height: 60px;
   border-radius: 4px;
   border: 1px solid #e0e7eb;
   font-family: "OpenSans";
-
+  max-width: 340px;
   outline: none;
   padding-left: 20px;
 }
 
 .label-input-container ::placeholder {
   color: #9fa7ac;
+  opacity: 0.5;
   padding: 1rem;
   font-size: 1rem;
 }
 
 .message-container {
-  grid-column: 1 / -1; 
-  grid-row: span 2; 
+  grid-column: 1 / -1;
+  grid-row: span 2;
   border-radius: 4px;
   font-family: "OpenSans";
 }
@@ -563,7 +595,7 @@ span {
 @media screen and (max-width: 500px) {
   .radio-container {
     justify-content: left;
-}
+  }
 }
 
 input[type="radio"] {
@@ -577,7 +609,7 @@ input[type="radio"] {
   width: 164px;
   max-height: 40px;
   background-color: #e4eaef;
-  color: #7f7d7d;  
+  color: #7f7d7d;
   border: 1px solid #dde3e8;
   font-style: bold;
   border-radius: 30px;
@@ -591,27 +623,6 @@ input[type="radio"] {
   text-shadow: 0.1px 0.1px 0px #fff; /* Text shadow for depth, can be adjusted as needed */
 }
 
-/* OLD CODE  */
-
-/* .radio-container label {
-  display: flex;
-  align-items: center;
-  justify-content: space-evenly;
-  width: 164px;
-  max-height: 40px;
-  background-color: #DDE3E8;
-  color: #ffffff;  
-  border: 1px solid #dde3e8;
-  font-style: bold;
-  border-radius: 30px;
-  font-family: "Avenir Next", sans-serif;
-  font-size: 14px;
-  font-weight: 300;
-  line-height: 40px;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
-} */
-
 input[type="radio"]:checked + label {
   background-color: #5fcfd5;
   color: var(--doncella-grey-color);
@@ -619,7 +630,7 @@ input[type="radio"]:checked + label {
 }
 
 label:hover {
-  background-color: #b3e0e9; 
+  background-color: #b3e0e9;
 }
 
 legend {
@@ -633,10 +644,8 @@ legend {
   margin-right: auto;
 }
 
-
-
 #submit-form-button {
-  display: block; 
+  display: block;
   margin-left: auto;
   margin-right: auto;
   margin-top: 3rem;
@@ -645,26 +654,31 @@ legend {
   border: 0;
   background-color: #5fcfd5;
   border-radius: 4px;
-  color: white;
+  color: #FFFFFF;
   cursor: pointer;
-  font-family: "Avenir Next";
+  font-family: "AvenirNext-Medium";
   font-weight: 500;
   font-size: 18px;
-  width: 15rem;
-  height: 3rem;
+  /* width: 15rem; */
+  /* height: 3rem; */
+  min-width: 200px;
+  min-height: 60px;
   text-transform: uppercase;
   transition: all ease-in-out 0.2s;
+  font-size: 18px;
+  text-align: center;
+  line-height: 24px;
+  border-radius: 4px;
+  background: #5FCFD5;
 }
 
 .input-button {
   padding-bottom: 100px;
 }
 
-
 @media screen and (max-width: 720px) {
-
-  .input-container
-  { /* Ensure the button container is also centered */
+  .input-container {
+    /* Ensure the button container is also centered */
     display: flex;
     flex-direction: column;
     align-items: center; /* This will center the child elements */
@@ -674,23 +688,21 @@ legend {
   .label-input-container input,
   .message-container textarea,
   .radio-container,
- 
-  .label-input-container label
-  {
+  .label-input-container label {
     width: 80vw; /* Adjust the width to fit smaller screens */
     max-width: 400px; /* Prevents elements from becoming too wide on larger screens */
     margin: 0 auto; /* Center these elements within their parent container */
   }
 
-  .label-input-container, .message-container {
+  .label-input-container,
+  .message-container {
     width: 100%; /* Ensure label and message container take full width of their parent */
     display: flex;
     flex-direction: column;
     align-items: center;
   }
 
-.label-input-container label  {
-    
+  .label-input-container label {
     text-align: left;
   }
 
@@ -715,7 +727,7 @@ legend {
 
   .radio-container {
     max-width: 400px;
-   padding: 0 1rem;
+    padding: 0 1rem;
     margin-left: auto;
     margin-right: auto;
     gap: 2rem;
@@ -732,32 +744,43 @@ legend {
 
   #submit-form-button {
     margin-left: auto;
-
   }
 }
 
-
 /* <------------------------------------------ FOOTER ------------------------------------------> */
 
- 
 footer {
   display: flex;
-  flex-direction: column;
+  /* flex-direction: column; */
+ 
 }
 
 .footer-banner {
   background-color: #00adb5;
   width: 100%;
+  
+}
+
+.footer-content {
+ 
+  display: flex;
+  width: 100%;
+  padding: 2% 15%;
+  
 }
 
 .footer-list {
-  
-  color: var(--doncella-white-color);
+   
+  color: #00ADBB;
   display: flex;
   list-style: none;
-  padding-left: 5%;
+  justify-content: space-between;
   font-size: 14px;
   padding-top: 2%;
+  font-family: "Lato-Regular";
+  font-size: 14px;
+  color: #FFFFFF;
+  letter-spacing: 0.02px;
 }
 
 /* For larger screens, only the large logo is visible */
@@ -771,18 +794,20 @@ footer {
 }
 
 .footer-list .links {
-  
   color: var(--doncella-white-color);
   display: flex;
-  justify-content: end;
   align-items: end;
-  padding-right: 10%;
-  width: 100%;
-  gap: 1rem;
+  margin-left: 100px;
+  /* width: 100%; */
+  gap: 0.5rem;
+  font-family: "Lato-Regular";
+  font-size: 14px;
+  max-width: 800px;
 }
 
 .footer-list a {
-  color: var(--doncella-white-color);
+  color: #FFFFFF;
+ 
 }
 
 .footer-content {
@@ -793,10 +818,12 @@ footer {
 .footer-social-media {
   display: flex;
   justify-content: end;
+  /* padding-left: 40vw; */
+  margin: 0 auto;
   gap: 15px;
   width: 100%;
-  padding-right: 15%;
   padding-top: 2%;
+  
 }
 
 .hidden-copyright {
@@ -804,12 +831,10 @@ footer {
 }
 
 .mobile-bottom {
-
 }
 
-@media screen and (width <= 1320px){
+@media screen and (width <= 1320px) {
   .footer-list .links {
-    
     font-size: 14px;
     flex-wrap: wrap;
     min-width: 550px;
@@ -819,31 +844,29 @@ footer {
   }
 }
 
-
-@media screen and (max-width: 780px) {
-
-  body, html {
+@media screen and (max-width: 1000px) {
+  body,
+  html {
     overflow-x: hidden;
   }
 
   .footer-list #footer-logo {
     display: block; /* Show the mobile logo */
   }
- 
+
   .footer-list #footer-logo-large {
     display: none;
   }
   .footer-social-media {
-
     display: flex;
-    justify-content: center; 
+    justify-content: center;
     align-items: center;
-    width: 100%; 
+    width: 100%;
     margin-left: auto;
     margin-right: auto;
-    gap: 20px; 
+    gap: 20px;
     padding: 20px 0 20px 10px;
-   }
+  }
 
   .mobile-bottom {
     justify-content: center;
@@ -863,6 +886,4 @@ footer {
     width: 60vw;
     gap: 20px;
   }
-
 }
-

@@ -1,0 +1,3 @@
+define(function() {
+  return "<div class='snapshot-item'> <a href='{{short_url}}' target='_blank' class='snapshot-item-anchor'> <span class='snapshot-item-url'>{{short_url}}</span> <span class='snapshot-item-time'>{{time_ago}}</span> </a> <a class='snapshot-item-delete'> <span class='snapshot-delete-label'>Delete</span> <span class='th-icon-snapshot-delete'></span> </a> <div class='snapshot-delete'> <a data-snapshot-id='{{id}}' class='snapshot-delete-confirm'>Delete Snapshot</a> <a class='snapshot-delete-cancel'>Cancel</a> </div> <div class='snapshot-delete-active'><span class='icon-loading'></span><p>Deleting Snapshot...</p></div></div>";
+});
