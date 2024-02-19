@@ -6,6 +6,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
 /* Nunito-Regular: */
 @import url("https://fonts.googleapis.com/css2?family=Nunito&display=swap");
+/* ROBOTO */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap");
 
 :root {
   --doncella-turquoise-color: #5fcfd5;
@@ -109,22 +111,23 @@ header #logo-img {
 }
 
 .hero h3 {
-  font-family: "Source Sans Pro", sans-serif;
-  font-weight: 700; /* Bold */
+  font-family: "SourceSansPro-Bold";
   color: #00adbb;
   display: flex;
   text-align: left;
   margin-top: 12rem;
   /* LOOK AT THIS FONT SIZE **************************** *****************************/
-  font-size: clamp(45px, 55px, 100px);
+  /* line-height: 60.5px; */
+  font-size: 55px;
+  /* letter-spacing: -0.6px; */
   line-height: 60.5px;
 }
 
 .header-description {
   opacity: 0.7;
   font-family: Helvetica;
-  font-size: clamp(18px, 3vw, 18px);
-  /* font-size: 18px; */
+  /* font-size: clamp(18px, 1vw, 18px); */
+  font-size: 18px;
   color: #272727;
   letter-spacing: 0;
   line-height: 24px;
@@ -333,25 +336,25 @@ a {
 .services-heading {
   margin: 3rem auto;
   text-align: center;
-  font-family: var(--main-font-family);
 }
 
 #Services-location {
   color: #4ac3cd;
   opacity: 0.7;
-
+  font-family: "SourceSansPro";
   font-size: 21px;
   letter-spacing: 0;
   text-align: center;
   line-height: 24px;
-  font-size: clamp(21px, 0.5vw, 21px);
+  /* font-size: clamp(21px, 0.5vw, 21px); */
   font-weight: 400;
+  padding-top: 1rem;
 }
 
 #Services-subtitle {
   /* font-size: clamp(1.8rem, 0.5vw, 2rem); */
   font-weight: 400;
-  font-family: "SourceSansPro-Semibold";
+  font-family: "SourceSansPro-Bold";
   font-size: 36px;
   color: #4a4a4a;
   letter-spacing: 0;
@@ -427,7 +430,7 @@ a {
   color: #00adbb;
   margin-bottom: 0.35rem;
   opacity: 0.7;
-  font-family: "SourceSansPro-Regular";
+  font-family: Helvetica, "SourceSansPro-Regular";
   letter-spacing: 2px;
   text-align: center;
   line-height: 24px;
@@ -439,7 +442,7 @@ a {
   /* font-size: 1rem; */
   margin-bottom: 0.65rem;
   color: #4a4a4a;
-  font-family: "SourceSansPro-Semibold";
+  font-family: "SourceSansPro";
   font-size: 24px;
   letter-spacing: 0;
   text-align: center;
@@ -462,13 +465,20 @@ a {
 
 .card__button {
   display: inline-block;
-  background-color: var(--doncella-turquoise-color);
+  background-color: #5fcfd5;
   padding: 0.75rem 1.5rem;
   margin: 2.5rem;
   border-radius: 0.25rem;
   color: var(--doncella-white-color);
   text-decoration: none;
   font-weight: 400;
+  width: 150px;
+  height: 40px;
+  font-family: "Roboto-Medium";
+  border-radius: 2px;
+  font-size: 14px;
+  color: #ffffff;
+  text-align: center;
 }
 
 .swiper-button-next,
@@ -490,14 +500,23 @@ a {
 
 h2 {
   opacity: 0.7;
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: 18px;
+  font-family: "SourceSansPro";
+  font-size: 21px;
   color: #4ac3cd;
   letter-spacing: 0;
   text-align: center;
   line-height: 24px;
   margin-top: 5rem;
   padding-top: 10rem;
+}
+
+.contact-form-subtitle {
+  font-family: "SourceSansPro-Bold";
+  font-size: 36px;
+  color: #4a4a4a;
+  letter-spacing: 0;
+  text-align: center;
+  line-height: 36px;
 }
 
 @media (width <= 520px) {
@@ -654,7 +673,7 @@ legend {
   border: 0;
   background-color: #5fcfd5;
   border-radius: 4px;
-  color: #FFFFFF;
+  color: #ffffff;
   cursor: pointer;
   font-family: "AvenirNext-Medium";
   font-weight: 500;
@@ -669,7 +688,7 @@ legend {
   text-align: center;
   line-height: 24px;
   border-radius: 4px;
-  background: #5FCFD5;
+  background: #5fcfd5;
 }
 
 .input-button {
@@ -752,26 +771,21 @@ legend {
 footer {
   display: flex;
   /* flex-direction: column; */
- 
 }
 
 .footer-banner {
   background-color: #00adb5;
   width: 100%;
-  
 }
 
 .footer-content {
- 
   display: flex;
   width: 100%;
   padding: 2% 15%;
-  
 }
 
 .footer-list {
-   
-  color: #00ADBB;
+  color: #00adbb;
   display: flex;
   list-style: none;
   justify-content: space-between;
@@ -779,7 +793,7 @@ footer {
   padding-top: 2%;
   font-family: "Lato-Regular";
   font-size: 14px;
-  color: #FFFFFF;
+  color: #ffffff;
   letter-spacing: 0.02px;
 }
 
@@ -806,8 +820,7 @@ footer {
 }
 
 .footer-list a {
-  color: #FFFFFF;
- 
+  color: #ffffff;
 }
 
 .footer-content {
@@ -823,7 +836,6 @@ footer {
   gap: 15px;
   width: 100%;
   padding-top: 2%;
-  
 }
 
 .hidden-copyright {
