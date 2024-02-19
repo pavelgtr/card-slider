@@ -779,9 +779,12 @@ footer {
 }
 
 .footer-content {
-  display: flex;
-  width: 100%;
-  padding: 2% 15%;
+  display: block;
+  width: 80%;
+  padding: 2% 10%;
+  padding-bottom: 4rem;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .footer-list {
@@ -816,17 +819,16 @@ footer {
   gap: 0.5rem;
   font-family: "Lato-Regular";
   font-size: 14px;
-  max-width: 800px;
+  max-width: 1200px;
+  /* border: var(--red-border-test); */
 }
 
 .footer-list a {
   color: #ffffff;
 }
 
-.footer-content {
-  padding-bottom: 4rem;
-  display: block;
-}
+/* .footer-content {
+} */
 
 .footer-social-media {
   display: flex;
