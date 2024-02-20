@@ -96,6 +96,12 @@ header #logo-img {
   font-weight: 500;
 }
 
+/* Define the style for the button when it's clicked */
+.contact-container button:active,
+.contact-container button:focus {
+    outline: none; /* Remove focus outline */
+}
+
 @media screen and (width <= 480px) {
   .contact-container button {
     display: none;
